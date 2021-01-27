@@ -23,7 +23,7 @@
 - `사랑합니다~!!!!`
 
 ##### 5.사진 자랑하기
-<img src="Synthesis_Do1_Do2.png" width="500px" height="400%" alt="렌더링실패시문자열"/>
+<img src="재윤_img.png" width="500px" height="400%" alt="렌더링실패시문자열"/>
 
 
 
