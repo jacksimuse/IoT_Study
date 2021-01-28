@@ -15,5 +15,5 @@ div.a{text-align: center;
    display: grid;
   grid-template-columns: 250px 1fr; }
   body {margin:0px;}
-h4 { text-align: center; margin: 0px; padding:20px;}
+h2 { text-align: center; margin: 0px; padding:20px;}
 ol {margin: 0px;}
