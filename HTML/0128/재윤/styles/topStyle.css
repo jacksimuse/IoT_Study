@@ -17,4 +17,11 @@
 
   font-weight: bold;
   font-size: 40px;
-}
+  }
+  body {
+    background-image:url('../pictures/banner.jpg');
+    min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url('../pictures/banner.jpg') no-repeat center/cover;
+  }
