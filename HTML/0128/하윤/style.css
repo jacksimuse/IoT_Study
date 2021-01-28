@@ -1,8 +1,7 @@
 
-     h1 {color: white;
-         background-color: black;}
+     h1 {color:white;
+         background-color:blue;}
 
-p {color:pink;
+p {color:blue;
    font-weight:bold;
-   font-style: italic;
 }
