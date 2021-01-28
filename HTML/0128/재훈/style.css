@@ -6,7 +6,7 @@ h1 {
  font-size:40px;
    }
 div.a{text-align: center;
-  border-bottom:1px solid gray; margin:0px; padding: 20px;}
+  border-bottom:1px solid gray; margin: 0px; padding-bottom: 50px;}
 
   #grid .b{border-right: 1px solid gray;
   width: 200px; margin: 0px;}
@@ -17,3 +17,8 @@ div.a{text-align: center;
   body {margin:0px;}
 h2 { text-align: center; margin: 0px; padding:20px;}
 ol {margin: 0px;}
+
+
+
+
+footer {border-top: 1px solid gray; text-align: center; font-size: 40px; }
