@@ -1,0 +1,32 @@
+<style type="text/css">
+	td {
+	text-align: center; 
+	font-size: 12pt; 
+	color: "blue";
+	}
+	p {
+	text-align: center; 
+	font-size: 20pt;
+	font-family: arial;
+	}
+	a {
+	text-decoration: none;
+	color: white;
+	}
+	/* 
+	a: hover (x) 
+	a:hover  (o)
+	의사클래스는 항상 붙여쓴다!!!!
+	*/
+	a:hover { 
+	color: red;	
+	}
+	body {
+	background-image:url('../pictures/menubg2.jpg');
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url('../pictures/menubg2.jpg') no-repeat center/cover;
+	}
+	
+</style>
