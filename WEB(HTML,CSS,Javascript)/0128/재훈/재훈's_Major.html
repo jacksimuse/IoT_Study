@@ -19,7 +19,7 @@
             .a {
                 padding: 30px;
             }
-
+			
             .pic {
                 border: dotted 10px skyblue;
                 width: auto;
@@ -27,17 +27,24 @@
                 position: absolute;
             }
             .pic:nth-child(1) {
-
-                top: 10;
-                left: 10;
+				/* 단위 뒤에는 px를 붙이자.. */
+                top: 10px;
+                left: 10px;
                 z-index: 1;
             }
             .pic:nth-child(2) {
-
-                top: 500;
-                left: 500;
+				/* 단위 뒤에는 px를 붙이자.. */
+                top: 50px;
+                left: 50px;
                 z-index: 500;
             }
+			
+			.picpos {
+			/* pic의 위치를 지정하기 위한 가상의 박스 */
+			/* 없으면 pic 각각 따로따로 지정해야됨!!! */
+				top: 200px;
+				position: absolute;
+			}
         </style>
 
     </head>
@@ -53,13 +60,16 @@
             <br>
             <br>
         </div>
-
-        <div class="pic">
-            <img src="image/실험도구.png">
-        </div>
-        <div class="pic">
-            <img src="image/고분자수지.png">
-        </div>
+		
+		<div class="picpos">
+		<!-- 위치 지정용 박스 -->
+			<div class="pic">
+				<img src="image/실험도구.png">
+			</div>
+			<div class="pic">
+				<img src="image/고분자수지.png">
+			</div>
+		</div>
 
         <br>
         <br>
