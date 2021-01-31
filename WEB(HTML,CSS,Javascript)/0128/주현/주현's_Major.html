@@ -20,7 +20,7 @@
             	/*background-color: rgb(255, 0, 0);*/
 				background-image: url('img/satellite.jpg');
 				border-radius: 50px;
-            	left: 10px;
+            	left: 70px;
             	top: 250px;
             	z-index: 100;
         	}
@@ -28,7 +28,7 @@
         	.box:nth-child(2) {
             	/*background-color: rgb(0, 255, 0);*/
 				background-image: url('img/map.jpg');
-            	left: 230px;
+            	left: 290px;
             	top: 420px;
             	z-index: 150;
         	}
@@ -36,8 +36,18 @@
 			#introduction {
 				top: 600px;
 				position: absolute;
+				
 			}
 			
+			#main_img {
+				top: 280px;
+				width: 700px;
+				height: 380px;
+				border-style: dashed;
+				border-width: 5px;
+				border-radius: 5px;
+				border-color: rgb(231, 201, 64);
+			}
 		</style>
 	</head>
 	
@@ -62,11 +72,12 @@
 		</div>
 		
 		<hr>
-			
+		<div id="main_img">
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
 		<content>
-			<div class="box"></div>
-			<div class="box"></div>
-			<div id="introduction">
+			<div id="introduction"></div>
 				<h2>학과 소개</h2>
 					<ul>
 						<li><b>지리정보시스템(GIS)</b></li>
