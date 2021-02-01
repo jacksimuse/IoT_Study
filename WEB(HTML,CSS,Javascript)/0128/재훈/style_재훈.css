@@ -25,7 +25,7 @@ h1 {
     color: red;
 }
 .a {
-    padding: 60px;
+    padding: 100px;
 }
 .middle {
     overflow: hidden;
@@ -37,19 +37,26 @@ h1 {
     position: absolute;
 }
 .pic:nth-child(1) {
-    top: 10px;
-    left: 10px;
-    z-index: 1;
+    /* top: 10px;
+    left: 10px; */
+    z-index: 100;
 }
 .pic:nth-child(2) {
-    top: 50px;
-    left: 50px;
-    z-index: 500;
+    top: 130px;
+    left: 120px;
+    z-index: 10;
 }
 .text {
+    margin: 0px;
     float: right;
     width: 550px;
     height: 420px;
+}
+.ellipsis {
+    margin: 0px;
+    text-align: left;
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     
 }
