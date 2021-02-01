@@ -3,11 +3,43 @@
  	<meta charset="UTF-8">
 	<title>초기 화면</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	<script>
+		var date;
+	
+		window.onload = function() {
+			const spanid = document.getElementById("spanid");
+			spanid.style.backgroundColor = "red";
+			const answer = document.getElementById('answer');
+			answer.style.display = "none";
+			
+			setInterval(function () {
+				date = new Date();
+				spanid.innerText = "사장님, 지금 시간이 " + date.getHours() + "시 " + date.getMinutes() + "분 "
+				+ date.getSeconds() + "초 인데 퇴근해도 될까요?";
+				answer.style.display = "block";}, 1000);
+		}
+		
+		function timestone() {
+            var string;
+			if(date.getHours < 3) {
+				string = "라떼는 말야, 야근을 밥먹듯이 했다네.";
+			} else if(date.getHours < 9) {
+				string = "출근도 안했는데? ^^";
+			} else if(date.getHours < 13) {
+				string = "오전업무는 해야할 것 아닌가?";
+			} else if(date.getHours < 18) {
+				string = "퇴근시간까지 열심히 일하게나!";
+			} else { // < 24시
+				string = "오늘 못다한 일들은 마저하게.";
+			}
+			alert(string);
+        }
+	</script>
 </head>
 
 <body bgcolor=#FFFFFF>
 <div>
-
 <form>
     아이디 :&nbsp;
     <input type="text" name="id" value="ABCD"><br>
@@ -17,6 +49,11 @@
     <input type="button" value="로그인">
 </form>
 </div>
+<div>
+	<span id="spanid">사장님...?</span>
+	<input type="button" id="answer" value="답변" onclick="timestone();">
+</div>
+
 
 <span>
 <h1>재윤이네 홈페이지에 온 걸 환영합니다~!!</h1>
