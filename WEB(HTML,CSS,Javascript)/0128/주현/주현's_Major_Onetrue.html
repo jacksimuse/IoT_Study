@@ -6,6 +6,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>주현 | 공간정보시스템공학과</title>
     <link rel="stylesheet" href="style/onetrue_style.css">
+    <script>
+        window.onload = function() {
+            alert("안녕하세요! 주혀니 홈페이지입니다 :)");
+        }
+
+        function button() {
+            var date = new Date();
+            var hour = date.getHours;
+            var blank = document.getElementById("blank");
+            if (hour < 13) {
+                blank.innerText = "더 보고 가세요! 😁";
+            } else if (hour < 15) {
+                blank.innerText = "재밌었나요?";
+            } else if (hour < 18) {
+                blank.innerText = "퇴근할 시간입니당";
+            } else {
+                blank.innerText = "^_^";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -98,6 +118,7 @@
     </div>
     <div id="footer">
         이메일 : kjoo10@naver.com<br>
+        <div id="blank"></div>
         <input type="button" value="눌러봐" onclick="button()">
     </div>
 
