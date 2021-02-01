@@ -1,0 +1,32 @@
+body {
+			background-image: url('pictures/ENIAC.jpg');
+            background-size: cover;  
+			background-attachment: fixed;
+            background-repeat:repeat-x ;
+			}
+			.pic {
+				/* styles.css 로 인해 radius 덮어서 없애기 */
+				border-radius: 0px;
+                border: solid 3px black;
+                width: auto;
+                height: auto;
+                position: absolute;
+            }
+            .pic:nth-child(1) {
+                top: 10px;
+                left: 10px;
+                z-index: 1;
+            }
+            .pic:nth-child(2) {
+                top: 50px;
+                left: 50px;
+                z-index: 500;
+            }
+			
+			.picpos {
+				top: 100px;
+				position: absolute;
+				margin:0px;
+				padding:0px;
+				border: 0px;
+			}
