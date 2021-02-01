@@ -3,65 +3,38 @@
     <head>
         <meta charset="utf-8">
         <title>재훈이 전공</title>
-        <style>
-            body {
-                background-image: url("image/공업화학과.png");
-                background-size: 100%;
-                background-attachment: fixed;
-                background-position: 0 30px;
-                background-repeat: no-repeat;
-                background-color: beige;
-            }
-            body > .picpos {
-                width: 500px;
-                height: 400px;
-                border: dotted 10px skyblue;
-				position: relative;
-                float: left;
-                margin-right: 10px;
-            }
-            h1 {
-                text-align: center;
-                color: red;
-            }
-            .a {
-                padding: 30px;
-            }
-			
-            .pic {
-                
-                width: auto;
-                height: auto;
-                position: absolute;
-            }
-            .pic:nth-child(1) {
-				/* 단위 뒤에는 px를 붙이자.. */
-                top: 10px;
-                left: 10px;
-                z-index: 1;
-            }
-            .pic:nth-child(2) {
-				/* 단위 뒤에는 px를 붙이자.. */
-                top: 50px;
-                left: 50px;
-                z-index: 500;
-            }
-            
-        </style>
+        <link rel="stylesheet" href="style_재훈.css">
+        <script>
+            alert("안녕하세요 재훈이의 홈페이지입니다.")
 
+            var date = new Date();
+            var hours = date.getHours();
+
+            function popup() {
+            if (hours < 8) {
+                alert('더 구경해주세요');
+            } else if (hours < 13) {
+                alert('재미었었나요?');
+            } else if (hours < 18) {
+                alert('퇴근할 시간이에요');
+            } else if ((18 <= hours) && (hours <= 24)) {
+                alert('영업이 종료되었습니다.');
+            }
+        }
+        </script>
     </head>
     <body>
+        
         <div class="a">
-            <audio
+            <h1>공업화학과 홈페이지입니다. </h1>
+            <br>
+                        
+            <audio class="sound"
                 src="Kalimba.mp3"
                 controls="controls"
                 poster="http://placehold.it/100x20"></audio>
-            <h1>공업화학과 홈페이지입니다.</h1>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
+        <div class="middle">
 		<div class="picpos">
 		<!-- 위치 지정용 박스 -->
 			<div class="pic">
@@ -71,7 +44,7 @@
 				<img src="image/고분자수지.png">
 			</div>
 		</div>
-
+        <div class="text">
             <p>우리나라의 산업구조가 기술 집약형 구조로 변화하는 추세에 따라 1984년 설치된 본 학과는 도료 제조 및 도장 공업과 표면처리에 관한 기초
                 이론을 확립한 후,</br>
             실무에 필요한 지식을 습득하고, 응용 기술을 연마하여 각종 중화학 분야인 가전, 자동차, 조선 및 제철 분야, 철 구조물인 산업 플랜트 분야
@@ -91,7 +64,8 @@
 표면공학과로 학과명을 변경하여
 </br>
 첨단 신소재 분야로 전공분야를 확대하였고, 1999년에는 공업화학과로 새롭게 태어나면서 정밀화학의 전 분야와 고기능 특수재료에까지 우리 졸업생이
-진출할 수 있는 길을 열어 놓았다.</p>
+진출할 수 있는 길을 열어 놓았다.</p></div></div>
+<div class="footer">
 <p>우리나라의 산업구조가 기술 집약형 구조로 변화하는 추세에 따라 1984년 설치된 본 학과는 도료 제조 및 도장 공업과 표면처리에 관한 기초
 이론을 확립한 후,</br>
 실무에 필요한 지식을 습득하고, 응용 기술을 연마하여 각종 중화학 분야인 가전, 자동차, 조선 및 제철 분야, 철 구조물인 산업 플랜트 분야
@@ -151,8 +125,10 @@
 위하여 고급 표면처리를 계획하고 실행하고 있는 400여명에 이르는 고급 전문 인력을 양성해 왔다. 1997년 부경대학교로 통합하면서표면공학과로
 학과명을 변경하여</br>첨단
 신소재 분야로 전공분야를 확대하였고, 1999년에는 공업화학과로 새롭게 태어나면서 정밀화학의 전 분야와 고기능 특수재료에까지 우리 졸업생이진출할
-수 있는 길을 열어 놓았다.</p>
+수 있는 길을 열어 놓았다.</p></div>
 <footer>
-    <h1>도움 주신분들 |<a href="https://github.com/jacksimuse" style="color:violet;text-decoration:underline">Http:/github.com/jacksimuse(재훈's github)</a></h1></footer>
+    <h1>도움 주신분들 |<a href="https://github.com/jacksimuse" style="color:violet;text-decoration:underline">Http:/github.com/jacksimuse(재훈's github)</a></h1>
+    <input type="button" value="감사합니다" onclick="popup('alert')">
+</footer>
 </body>
 </html>

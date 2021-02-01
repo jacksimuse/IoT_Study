@@ -1,0 +1,55 @@
+body {
+    background-image: url("image/공업화학과.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 0 30px;
+    background-repeat: no-repeat;
+    background-color: beige;
+    width: 1100px;
+    margin: 10px auto;
+}
+.sound {
+    float: right;
+}
+.picpos {
+    width: 500px;
+    height: 400px;
+    border: dotted 10px skyblue;
+    position: relative;
+    float: left;
+    
+
+}
+h1 {
+    text-align: center;
+    color: red;
+}
+.a {
+    padding: 60px;
+}
+.middle {
+    overflow: hidden;
+}
+.pic {
+    
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+.pic:nth-child(1) {
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.pic:nth-child(2) {
+    top: 50px;
+    left: 50px;
+    z-index: 500;
+}
+.text {
+    float: right;
+    width: 550px;
+    height: 420px;
+    text-overflow: ellipsis;
+    
+}
