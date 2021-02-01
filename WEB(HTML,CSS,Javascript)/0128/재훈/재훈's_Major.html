@@ -12,6 +12,14 @@
                 background-repeat: no-repeat;
                 background-color: beige;
             }
+            body > .picpos {
+                width: 500px;
+                height: 400px;
+                border: dotted 10px skyblue;
+				position: relative;
+                float: left;
+                margin-right: 10px;
+            }
             h1 {
                 text-align: center;
                 color: red;
@@ -21,7 +29,7 @@
             }
 			
             .pic {
-                border: dotted 10px skyblue;
+                
                 width: auto;
                 height: auto;
                 position: absolute;
@@ -38,13 +46,7 @@
                 left: 50px;
                 z-index: 500;
             }
-			
-			.picpos {
-			/* pic의 위치를 지정하기 위한 가상의 박스 */
-			/* 없으면 pic 각각 따로따로 지정해야됨!!! */
-				top: 200px;
-				position: absolute;
-			}
+            
         </style>
 
     </head>
@@ -60,7 +62,6 @@
             <br>
             <br>
         </div>
-		
 		<div class="picpos">
 		<!-- 위치 지정용 박스 -->
 			<div class="pic">
@@ -70,22 +71,6 @@
 				<img src="image/고분자수지.png">
 			</div>
 		</div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
             <p>우리나라의 산업구조가 기술 집약형 구조로 변화하는 추세에 따라 1984년 설치된 본 학과는 도료 제조 및 도장 공업과 표면처리에 관한 기초
                 이론을 확립한 후,</br>
@@ -167,6 +152,7 @@
 학과명을 변경하여</br>첨단
 신소재 분야로 전공분야를 확대하였고, 1999년에는 공업화학과로 새롭게 태어나면서 정밀화학의 전 분야와 고기능 특수재료에까지 우리 졸업생이진출할
 수 있는 길을 열어 놓았다.</p>
-<footer>도움 주신분들 |<ahref="https://github.com/jacksimuse"style="color:violet;text-decoration:underline">Http:/github.com/jacksimuse(재훈's github)</a></footer>
+<footer>
+    <h1>도움 주신분들 |<a href="https://github.com/jacksimuse" style="color:violet;text-decoration:underline">Http:/github.com/jacksimuse(재훈's github)</a></h1></footer>
 </body>
 </html>
