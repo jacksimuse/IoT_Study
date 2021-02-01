@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>주현 | 공간정보시스템공학과</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            margin: 0px auto;
+            width: 1300px;
+            background-image: url('img/nature_ps1.png');
+            background-size: 1920px 250px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        body>div {
+            position: relative;
+            top: 80px;
+        }
+
+        #header {
+            overflow: hidden;
+            /* background-color: lightgray; */
+            height: 130px;
+            text-align: center;
+        }
+
+        #section {
+            overflow: hidden;
+            /*height: 600px;*/
+        }
+
+        #aside {
+            float: left;
+            width: 250px;
+            /* background-color: blueviolet; */
+        }
+
+        #content {
+            float: right;
+            width: 1050px;
+            background-color: thistle;
+        }
+
+        #footer {
+            background-color: rgb(252, 227, 231);
+            height: 100px;
+        }
+
+        .ellipsis {
+            /* 글자 생략하기 : 글자가 길어지면 생략하고 ... 표시*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #main_img {
+            overflow: hidden;
+            float: right;
+            width: 400px;
+            height: 400px;
+            border-style: dashed;
+            border-width: 5px;
+            border-radius: 5px;
+            border-color: violet;
+            /* background-color: beige; */
+            position: relative;
+            margin: 20px;
+        }
+
+        .img {
+            width: 350px;
+            height: 300px;
+            background-repeat: no-repeat;
+            position: absolute;
+            float: right;
+        }
+
+        .img:nth-child(1) {
+            /*background-color: rgb(255, 0, 0);*/
+            background-image: url('img/satellite.jpg');
+            border-radius: 10px;
+            right: 0px;
+            z-index: 100;
+        }
+
+        .img:nth-child(2) {
+            /*background-color: rgb(0, 255, 0);*/
+            background-image: url('img/map.jpg');
+            top: 250px;
+            z-index: 150;
+        }
+
+        #introduction {
+            padding: 10px;
+        }
+
+        #QnA {
+            padding: 10px;
+        }
+
+        #href {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" class="ellipsis">
+        <div id="title" class="ellipsis">
+            <h1>공간정보시스템공학과</h1>
+            <h3><i>Department of Spatial Information Engineering</i></h3>
+            공간정보시스템공학과는 다양한 수단을 통해 수집된 정보를 지리정보시스템으로 응용 및 활용하는데 필요한 학문과 기술을 다루게 됩니다.<br>
+            복잡한 지구환경과 고도화된 산업사회에 대한 신속하고 정확한 모니터링으로 우리 생활에 반드시 필요한 미래 과학기술 분야입니다.
+
+        </div>
+    </div>
+
+
+    <div id="section" class="ellipsis">
+
+        <div id="aside" class="ellipsis">
+            <div id="href">
+                <ul>
+                    <li><a href="https://github.com/joohy97">GitHub</a></li>
+                    <li><a href="https://joohy97.github.io/">GitHub.io</a></li>
+                    <li><a href="0128_ex.html">0128</a></li>
+                    <li><a href="#">0129</a></li>
+                    <li><a href="#">0201</a></li>
+                    <li><a href="#">0202</a></li>
+                    <li><a href="#">0203</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="content" class="ellipsis">
+            <div id="main_img">
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+
+            <div id="introduction">
+                <h2>학과 소개</h2>
+                <ul>
+                    <div class="ellipsis">
+                        <li><b>지리정보시스템(GIS)</b></li>
+                        - 지리정보시스템(Geographic Information System, GIS)은 국토의 지리공간정보를 디지털화하여 수치지도(digital map)로 작성하고 다양한
+                        정보통신기술을 통해 재해·환경·시설물·국토공간 관리와 행정서비스에 활용하는 첨단정보시스템입니다.<br><br>
+                        <li><b>지구환경 원격탐사(RS)</b></li>
+                        - 지구환경 원격탐사(RS)는 기상ㆍ기후ㆍ지표면ㆍ해양 등의 지구환경 자료를 직접적인 접촉 없이 원거리에서 반사 또는 방출되는 전자기파를 이용하여 관측하는 기술로서 지구환경과
+                        관련된 자료를 수집하고 분석ㆍ응용할 수 있습니다. 원격탐사는 비교적 짧은 시간에 넓은 영역을 한 번에 관측 할 수 있는 장점이 있습니다.<br><br></p>
+                        <li><b>위성측위시스템(GPS)</b></li>
+                        - 위성측위시스템(Global Positioning System, GPS)은 GPS 위성에서 보내는 신호를 수신해 사용자의 현재 위치를 계산하는 위성항법시스템입니다. 단순한
+                        위치정보 제공에서부터 항공기ㆍ선박ㆍ자동차의 자동항법 및 교통관제, 유조선의 충돌방지, 대형 토목공사의 정밀 측량, 제도제작 등 광범위한 분야에 응용되고
+                        있습니다.<br><br>
+                        <li><b>지능형교통시스템(ITS)</b></li>
+                        - 지능형교통시스템(Intelligent Transportation System, ITS)은 교통・전자・통신・제어 등 첨단기술을 도로・차량・화물 등 교통체계의 구성요소에
+                        적용하여 실시간 교통정보를 수집・관리・제공함으로써, 교통시설의 이용효율을 극대화하고, 교통 이용편의와 교통안전을 제고하며, 에너지 절감 등 환경 친화적 교통체계를 구현하는
+                        21세기형 첨단시스템입니다.<br><br>
+                    </div>
+                </ul>
+            </div>
+
+            <div id="QnA">
+                <h2>입학 Q&A</h2>
+                <ul>
+                    <div class="ellipsis">
+                        <li><b>국내 주요 공간정보 관련 학과들은 어디가 있나요?</b></li>
+                        - 국내에서 공간정보를 다루는 관련 학과에는 부경대학교 공간정보시스템공학과, 서울시립대학교 공간정보공학과, 경북대학교 항공위성시스템전공, 인하대학교 공간정보공학과,
+                        남서울대학교 GIS공학과, 경일대학교 공간정보공학과가 있습니다.<br><br>
+                        <li><b>공간정보시스템공학과는 문과학생이 진학하여 공부하는데 무리가 없을까요?</b></li>
+                        - 우리 국립 부경대학교 공간정보시스템공학과에서는 하드웨어 위주의 공과대 학문들 보다는 아이디어와 소프트웨어 기반의 21세기 선진국형 융합학문을 지향합니다. 이과학생들은
+                        흥미를 느끼며 전공과정을 이수할 수 있으며, 문과학생들도 기초부터 심화이론수업 및 실습을 통하여 문제없이 전공과정을 이수할 수 있습니다. 현재 본 학과 재학생들도 이과와
+                        문과학생들이 비슷한 비율로 구성되어 있습니다.<br><br></p>
+                        <li><b>공간정보시스템공학과에서는 무엇을 배우나요?</b></li>
+                        - 첨단 위성 등의 다양한 수단으로부터 획득된 자료를 처리하는 소프트웨어 기술부터 처리된 자료를 추가 가공 및 활용하여 사용자의 위치기반에 해당하는 다양한 정보를 제공할 수
+                        있는 21세기 선진국형 융합학문을 배우게 됩니다. 다음의 학문들을 기초부터 심화이론수업 및 실습을 통하여 배우게 됩니다.<br><br>
+                        <li><b>졸업 후 진로는 어떻게 되나요?</b></li>
+                        - 국립부경대학교는 학문적으로도 우수하지만 취업률 부분에서도 국립대 중 1위를 달성하였습니다. 우리 학과는 이러한 부경대에서도 상위권의 취업률을 자랑하고 있습니다.
+                        졸업생들의 주요 진로 분야는 중앙 및 지방정부, 공사 등의 공공기업, 삼성SDS, 네이버, 현대모비스 등의 대기업 및 중앙항업 등 주요 중견기업에 취업을 하고
+                        있습니다.<br><br>
+                        <li><b>강의시설, 실습시설에 대해 궁금합니다.</b></li>
+                        - 공간정보시스템공학과는 전산실습실 2실, 일반 강의실 2실, 국제세미나실 1실로 부경대학교에서 가장 많은 강의실을 보유한 학과입니다. 전산실습실은 원활한 실습을 위해 각각
+                        40대, 42대의 PC가 구비되어 있으며, 전공수업이 많은 2학년, 3학년 전용강의실로 사용되고 있기 때문에 1인 1PC로 교육기자재를 활용하고 있습니다. 또한,
+                        교육환경개선을 위해 일반 강의실 2실 모두 계단식 강의실로 구축하여 수업이나 특강, 세미나 개최 시 보다 효과적으로 의사소통을 할 수 있도록 하였습니다.
+
+                        측량 및 지적 수업을 위해 레벨측량기기 3세트, 평판측량기기 3세트, 토탈스테이션 4세트, 데오도라이트 3세트, GPS 2세트를 구비하여 모든 학생들이 충분히 실습할 수
+                        있도록 하였습니다. 또한, 원활한 수업진행과 다양한 실습능력 학습을 위해 PC 및 데이터 처리용 소프트웨어(ENVI, VISSIM 등)를 제공하고 있습니다.<br><br>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+        이메일 : kjoo10@naver.com
+        <input type="button" value="눌러봐" onclick="button()">
+    </div>
+
+</body>
+
+</html>
