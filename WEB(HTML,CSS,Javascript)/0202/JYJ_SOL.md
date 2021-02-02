@@ -32,7 +32,7 @@
         <div>
             <img src="http://placekitten.com/110/110">
             <p>Lorem ~~ </p>
-        </div>
+        </div> 
     </body>
 </html>
 ```
