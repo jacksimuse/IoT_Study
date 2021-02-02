@@ -17,7 +17,7 @@
 
 -----------------------
 ```
-# 확인하기
+**결과 확인하기**
 ```
 [재윤이네](https://github.com/jacksimuse/IoT_Study/tree/main/WEB(HTML%2CCSS%2CJavascript)/0128/%EC%9E%AC%EC%9C%A4)
 
