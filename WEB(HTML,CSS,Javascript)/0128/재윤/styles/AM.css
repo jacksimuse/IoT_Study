@@ -1,0 +1,12 @@
+
+	body {
+			background-image: url('pictures/EUCLID.jpg');
+            background-size: cover;  
+			background-attachment: fixed;
+            background-repeat:repeat-x ;
+			}
+	div {
+				/* styles.css 로 인해 radius 덮어서 없애기 */
+				border-radius: 0px;
+                border: solid 3px black;
+			}
