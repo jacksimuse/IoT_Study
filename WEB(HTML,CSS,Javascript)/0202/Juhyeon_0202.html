@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Review 0202</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!-- 2: 7장 2번 -->
+    <style>
+
+        * { margin: 0; padding: 0; }
+        .container {
+            width: 1080px;
+            background-color: bisque;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .left {
+            float: left;
+            width: 740px; height: 428px;
+            background-color: coral;
+        }
+        .right {
+            float: right;
+            width: 332px;
+            height: 428px;
+            background-color: darkgray;
+        }
+        .gnb {
+            float: left;
+            padding: 8px 0px;
+            background-color: rgb(150, 230, 150);
+        }
+        .gnb > li {
+            list-style-type: none;
+            float: left;
+            padding-left: 16px;
+        }
+        .gnb > li:nth-child(1) {
+            padding-left: 0px;
+        }
+        .rank {
+            float: right;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: rgb(255, 219, 121);
+        }
+        .rank > li{
+            list-style-type: none;
+        }
+        .footer {
+            height: 80px;
+        }
+    </style>
+
+    <!-- 3: 11장 11번 -->
+    <style>
+        .box {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        var colors = ["red", "green", "blue"];
+        var currentColor = 0;
+        $(document).ready(function(){
+            $(".box").css({
+            backgroundColor: colors[currentColor]
+            }).click(function(){
+                currentColor = (currentColor + 1) % 3
+                $(this).css("background", colors[currentColor])
+            });
+        });
+        
+    </script>
+</head>
+
+<body>
+    <!-- 1: 3장 12번 -->
+    <div>
+        <table border="1">
+            <th colspan="6">한국의 차</th>
+
+            <tr>
+                <th rowspan="6">뿌리차</th>
+                <td>인삼차</td>
+                <th rowspan="9">과일차</th>
+                <td>수정과</td>
+                <th rowspan="5">잎차</th>
+                <td>뽕잎차</td>
+            </tr>
+            <tr>
+                <td>당귀차</td>
+                <td>유자차</td>
+                <td>감잎차</td>
+            </tr>
+            <tr>
+                <td>생강차</td>
+                <td>구기자차</td>
+                <td>솔잎차</td>
+            </tr>
+            <tr>
+                <td>칡차</td>
+                <td>대추차</td>
+                <td>국화차</td>
+            </tr>
+            <tr>
+                <td>둥굴레차</td>
+                <td>오미자차</td>
+                <td>이슬차</td>
+            </tr>
+            <tr>
+                <td>마차</td>
+                <td>매실차</td>
+                <th rowspan="4">기타</td>
+                <td>두충차</td>
+            </tr>
+            <tr>
+                <th rowspan="3">곡물차</th>
+                <td>보리차</td>
+                <td>모과차</td>
+                <td>영지버섯차</td>
+            </tr>
+            <tr>
+                <td>옥수수차</td>
+                <td>산수유차</td>
+                <td>귤강차</td>
+            </tr>
+            <tr>
+                <td>현미차</td>
+                <td>탱자차</td>
+                <td>쌍화차</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <!-- 2: 7장 2번 -->
+    <div class="container">
+        <h1>Logo</h1>
+
+    <div>
+        <ul class="gnb">
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>쇼핑</li>
+            <li>사전</li>
+            <li>뉴스</li>
+            <li>증권</li>
+            <li>부동산</li>
+            <li>지도</li>
+        </ul>
+
+        <ul class="rank">
+            <li>실시간 검색 순위</li>
+        </ul>
+    </div>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="container">
+        <div class="footer"></div>
+    </div>
+    
+    <hr>
+
+    <!-- 3: 11장 11번 -->
+    <div class="box">클릭</div>
+    <div class="box">클릭</div>
+    <div class="box">클릭</div>
+</body>
+
+</html>
