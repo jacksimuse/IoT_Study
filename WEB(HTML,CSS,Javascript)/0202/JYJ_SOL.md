@@ -26,7 +26,7 @@
     </head>
     <body>
         <div>
-            <img src="http://placekitten.com/150/150" id="first">
+            <img src="http://placekitten.com/150/150">
             <p>Lorem ~~ </p>
         </div>
         <div>
