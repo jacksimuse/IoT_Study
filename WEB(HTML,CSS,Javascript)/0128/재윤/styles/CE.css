@@ -1,8 +1,8 @@
-body {
-			background-image: url('pictures/ENIAC.jpg');
-            background-size: cover;  
-			background-attachment: fixed;
-            background-repeat:repeat-x ;
+			body {
+				background-image: url('pictures/ENIAC.jpg');
+				background-size: cover;  
+				background-attachment: fixed;
+				background-repeat:repeat-x ;
 			}
 			.pic {
 				/* styles.css 로 인해 radius 덮어서 없애기 */
