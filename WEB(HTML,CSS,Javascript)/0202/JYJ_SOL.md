@@ -326,4 +326,77 @@
 
 </html>
 ```
+-------------------------
+## 8장 5번 문제 (21.02.03)
+```html
+<!DOCTYPE html>
+<html>
 
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<style>
+	* { margin: 0; padding: 0; }
+
+	li { 
+		list-style-type: none;
+		padding: 24px 0;
+		border-bottom: 1px solid #c7c7c7;
+	}
+
+	@media screen {
+		div.left {
+			display: none;
+		}
+	}
+
+	@media screen and (orientation: landscape) {
+		div.left {
+			display: block;
+			width: 30%;
+			float: left;
+		}
+
+		div.right {
+			width: 70%;
+			float: right;
+		}
+	}
+
+	div.content {
+		padding: 16px;
+	}
+
+	</style>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+<div>
+	<div class="left">
+		<div class="content">
+			<h1>List</h1>
+			<ul>
+				<li>Velit ipsum ullamco</li>
+				<li>Nulla qui officia anim</li>
+				<li>quis proident tempor ipsum</li>
+				<li>et sunt sit culpa ad</li>
+				<li>fugiat reprehenderit sint mollit.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="right">
+		<div class="content">
+			<h1>Lorem ipsum</h1>
+			<p>Sunt nostrud consequat</p>
+			<p>Aute do et ullamco</p>
+			<p>Deserunt irure Lorem</p>
+			<p>Velit ipsum ullamco et</p>
+		</div>
+	</div>
+<div>
+</body>
+
+</html>
+```
