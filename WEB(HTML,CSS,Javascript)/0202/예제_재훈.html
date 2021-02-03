@@ -5,13 +5,15 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!-- 7장용 css -->
         <style>
-             <style>
-            * { margin: 0; padding: 0; }
+            * {
+                margin: 0;
+                padding: 0;
+            }
             .container {
                 width: 1080px;
-                margin: 0 auto;
-                margin-bottom: 8px;
+                margin: 0 auto 8px;
                 overflow: hidden;
             }
             .left {
@@ -26,33 +28,32 @@
                 height: 428px;
                 background-color: blue;
             }
-            </style>
-            <style>
-                .gnb {
-                    float: left;
-                    padding: 8px 0;
-                }
-                li {
-                    background-color: green;
-                   list-style-type: none; 
-                   float: left;
-                   padding: 0 0 0 16px;
-                }
-                #a {
-                    padding: 0;
-                }
-                #b {
-                    padding: 0;
-                }
-                .rank {
-                    float: right;
-                    padding: 8px 0 8px 0;
-                }
-                .footer {
-                    height: 80px;
-                    background-color: yellow;
-                }
-            </style>
+
+            .gnb {
+                float: left;
+                padding: 8px 0;
+            }
+            li {
+                background-color: green;
+                list-style-type: none;
+                float: left;
+                padding: 0 0 0 16px;
+            }
+            #a {
+                padding: 0;
+            }
+            #b {
+                padding: 0;
+            }
+            .rank {
+                float: right;
+                padding: 8px 0;
+            }
+            .footer {
+                height: 80px;
+                background-color: yellow;
+            }
+        </style>
     </head>
     <body>
         <!-- 3장 12번 -->
@@ -122,7 +123,7 @@
             <h1>Logo</h1>
         </div>
         <div class="container">
-            <ul class="gnb"> 
+            <ul class="gnb">
                 <li id="a">카페</li>
                 <li>블로그</li>
                 <li>쇼핑</li>
@@ -154,12 +155,12 @@
         <script>
             var colors = ['red', 'green', 'blue']
             var currentColor = 0
-            $('.box').css({
-                backgroundColor: colors[currentColor]
-            }).click(function () {
-                currentColor++
-                $(this).css({ backgroundColor: colors[currentColor]})
-            })
+            $('.box')
+                .css({backgroundColor: colors[currentColor]})
+                .click(function () {
+                    currentColor++
+                    $(this).css({backgroundColor: colors[currentColor]})
+                })
         </script>
         <style>
             .box {
