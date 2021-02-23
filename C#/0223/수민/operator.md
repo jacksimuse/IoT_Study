@@ -11,7 +11,7 @@
 
 using System;
 
-	class Program
+      class Program
     {
         static void Main(string[] args)
         {
@@ -27,7 +27,7 @@ using System;
                     Console.WriteLine("0");
             }
         }  
-	}
+    }
 
 
 ---------------------------------------------------
