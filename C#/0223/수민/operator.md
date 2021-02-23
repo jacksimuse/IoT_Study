@@ -9,7 +9,7 @@
 
 [ 답 ]
 
-using System;
+     using System;
 
       class Program
     {
@@ -38,9 +38,8 @@ using System;
 하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.
 
 [ 답 ]
-
-using System;
-
+      
+      using System;
 
     class Program
     {
