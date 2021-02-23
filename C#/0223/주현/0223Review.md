@@ -58,7 +58,7 @@ namespace _0223Review_2
 }
 ```
 
-#3번 : 셀프넘버 구하기
+# 3번 : 셀프넘버 구하기
 
 ```cs
 using System;
