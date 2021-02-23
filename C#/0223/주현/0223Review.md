@@ -1,3 +1,6 @@
+# 1번 : 윤년 구하기
+
+```cs
 using System;
 
 
@@ -18,9 +21,12 @@ namespace _0223Review
         }
     }
 }
+```
 
 
+# 2번 : 별 찍기
 
+```cs
 using System;
 
 
@@ -50,9 +56,11 @@ namespace _0223Review_2
         }
     }
 }
+```
 
+#3번 : 셀프넘버 구하기
 
-
+```cs
 using System;
 
 
@@ -106,3 +114,4 @@ namespace _0223Review_3
         }
     }
 }
+```
