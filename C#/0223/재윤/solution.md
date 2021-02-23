@@ -25,7 +25,7 @@ namespace Sol
                 else {
                     
                     if((number % 4 == 0 && number % 100 != 0) ||number % 400 == 0)
-Console.WriteLine("1");
+                        Console.WriteLine("1");
                     else
                         Console.WriteLine("0");
                 }
@@ -129,7 +129,7 @@ namespace Sol3
     }
 }
 ```
-또다른 풀이 방법으로 d(n)은 n = 자리수 숫자  * (10^(각 자리수 - 1) + 1), 선형 조합으로 생각할 수 있다.
+또다른 풀이 방법으로 d(n) = 자리수 숫자  * (10^(각 자리수 - 1) + 1) 인 선형 조합으로 생각할 수 있다.
 앞의 풀이와 마찬가지로 1 ~ 10000 까지의 자연수 집합(테이블)에서 배제하면 셀프 넘버를 구할 수 있다. (시간복잡도는 위 풀이법과 같다.)
 ```csharp
 using System;
