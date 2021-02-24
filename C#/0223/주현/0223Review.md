@@ -13,7 +13,7 @@ namespace _0223Review
             string val = Console.ReadLine();
             int varnum = 0;
             int.TryParse(val, out varnum);
-            if (varnum % 4 == 0 && (varnum % 100 != 0 || varnum % 400 == 0))
+            if ((varnum % 4 == 0 && varnum % 100 != 0) || varnum % 400 == 0)
             {
                 Console.WriteLine(1);
             }
