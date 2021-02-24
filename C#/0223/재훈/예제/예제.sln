@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "예제", "예제\예제.csproj", "{B054335A-CA74-4BC2-9F62-347568E67494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "예제2", "예제2\예제2.csproj", "{7EC9F6D4-4CD0-4042-A0CA-FDB3A44E98ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B054335A-CA74-4BC2-9F62-347568E67494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B054335A-CA74-4BC2-9F62-347568E67494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B054335A-CA74-4BC2-9F62-347568E67494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B054335A-CA74-4BC2-9F62-347568E67494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC9F6D4-4CD0-4042-A0CA-FDB3A44E98ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC9F6D4-4CD0-4042-A0CA-FDB3A44E98ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC9F6D4-4CD0-4042-A0CA-FDB3A44E98ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC9F6D4-4CD0-4042-A0CA-FDB3A44E98ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23CFB964-6D0B-49F7-8DA6-48258AE5F7B7}
+	EndGlobalSection
+EndGlobal
