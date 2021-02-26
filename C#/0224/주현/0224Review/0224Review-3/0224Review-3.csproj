@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A60960C1-4E91-43A5-A5D6-A3388DC08A8C}</ProjectGuid>
+    <ProjectGuid>{81C9552F-8FE6-4343-B6A7-09400E41FA0E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_0224Review</RootNamespace>
-    <AssemblyName>0224Review</AssemblyName>
+    <RootNamespace>_0224Review_3</RootNamespace>
+    <AssemblyName>0224Review-3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="0224Review-1.cs" />
+    <Compile Include="0224Review-3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
