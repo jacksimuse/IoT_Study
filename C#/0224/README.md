@@ -1,4 +1,4 @@
-#2월 24일 문제
+# 2월 24일 문제
 
 [1번 문제](https://www.acmicpc.net/problem/10828) / 스택
 
