@@ -20,9 +20,9 @@ namespace Jaehun_Cal
 
         private void Calculator(char type)
         {
-            double Num1 = double.Parse(TxtNum1.Text.ToString());
-            double Num2 = double.Parse(TxtNum2.Text.ToString());
-            double Result = 0;
+            decimal Num1 = decimal.Parse(TxtNum1.Text.ToString());
+            decimal Num2 = decimal.Parse(TxtNum2.Text.ToString());
+            decimal Result = 0;
 
             try
             {
@@ -51,7 +51,7 @@ namespace Jaehun_Cal
                     TxtResult.Text = Result.ToString();
                 }
             }
-            catch (DivideByZeroException ex)
+            catch (Exception ex)
             {
                 MessageBox.Show($"예외발생 { ex.Message}");
             }
