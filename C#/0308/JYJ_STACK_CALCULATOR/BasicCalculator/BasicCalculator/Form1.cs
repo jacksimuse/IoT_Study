@@ -410,6 +410,7 @@ namespace BasicCalculator
             else
             {
                 TxtCmd.Text = "";
+                error_flag = false;
                 return;
             }
         }
