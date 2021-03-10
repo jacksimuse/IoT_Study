@@ -283,13 +283,19 @@ namespace BasicCalculator
                 BefInput.Push(TxtCmd.Text);
             }
             else
+            {
                 MessageBox.Show("연산자 수가 부족합니다.", "에러", MessageBoxButtons.OK);
+                TxtCmd.Text = "";
+
+                BefInput = new Stack<string>();
+                BefInput.Push(TxtCmd.Text);
+            }
              
         }
 
         #endregion 계산기 메서드 영역
 
-
+        #region 이벤트 핸들링 영역
         private void Btn1_Click(object sender, EventArgs e)
         {
             BefInput.Push("1");
@@ -529,6 +535,7 @@ namespace BasicCalculator
                     break;
             }
         }
+        #endregion 이벤트 핸들링 영역
     }
 }
 
