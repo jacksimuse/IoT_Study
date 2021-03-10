@@ -21,6 +21,8 @@ namespace BasicCalculator
         public FrmMain()
         {
             InitializeComponent();
+
+            TxtCmd.KeyPress += TxtCmd_KeyPress;
         }
 
         #region 계산기 사용자 메서드 영역
@@ -470,6 +472,61 @@ namespace BasicCalculator
             TxtCmd.Text += BefInput.Peek();
             TxtCmd.SelectionStart = TxtCmd.TextLength;
             TxtCmd.ScrollToCaret();
+        }
+
+
+        private void TxtCmd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch((char) e.KeyChar)
+            {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    // (GroupBoxNumber.Controls[string.Format("Btn{0}", (int)(e.KeyChar - '0'))] as Button).PerformClick();
+                    ((Button) GroupBoxNumber.Controls["Btn" + e.KeyChar]).PerformClick();
+                    break;
+
+                case '.':
+                    ((Button)GroupBoxNumber.Controls["BtnDot"]).PerformClick();
+                    break;
+                case '=': // ((int) 61) 
+                case '\r': // carriage return (엔터, (int) 10)
+                    ((Button)GroupBoxNumber.Controls["BtnResult"]).PerformClick();
+                    break;
+                case '(':
+                    ((Button)GroupBoxNumber.Controls["LeftParentheses"]).PerformClick();
+                    break;
+                case ')':
+                    ((Button)GroupBoxNumber.Controls["RightParentheses"]).PerformClick();
+                    break;
+                case (char) 8: // backspace (백스페이스, (int) 8)
+                    // 왜 이건 그룹 내에 포함이 안되는 건가 ?ㅅ?..
+                    ((Button)Controls["BtnCE"]).PerformClick();
+                    break;
+
+                case '+':
+                    ((Button)groupBoxOperation.Controls["BtnAdd"]).PerformClick();
+                    break;
+                case '-':
+                    ((Button)groupBoxOperation.Controls["BtnSub"]).PerformClick();
+                    break;
+                case '*':
+                    ((Button)groupBoxOperation.Controls["BtnMul"]).PerformClick();
+                    break;
+                case '/':
+                    ((Button)groupBoxOperation.Controls["BtnDiv"]).PerformClick();
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }
