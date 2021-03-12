@@ -296,93 +296,6 @@ namespace BasicCalculator
         #endregion 계산기 메서드 영역
 
         #region 이벤트 핸들링 영역
-        private void Btn1_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("1");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn2_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("2");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn3_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("3");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn4_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("4");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn5_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("5");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn6_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("6");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn7_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("7");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn8_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("8");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn9_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("9");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void Btn0_Click(object sender, EventArgs e)
-        {
-            BefInput.Push("0");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void BtnDot_Click(object sender, EventArgs e)
-        {
-            BefInput.Push(".");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
 
         // 계산식 결과 출력(=)
         private void BtnResult_Click(object sender, EventArgs e)
@@ -409,10 +322,8 @@ namespace BasicCalculator
             MessageBox.Show(tmp2, "임시결과2");*/
 
             // 후위식 -> 계산
-            if(!error_flag)
-            {
+            if (!error_flag)
                 calculate(Postfixlist);
-            }
             else
             {
                 TxtCmd.Text = "";
@@ -421,33 +332,25 @@ namespace BasicCalculator
             }
         }
 
-        private void BtnAdd_Click(object sender, EventArgs e)
+        private void BtnNum_Click(object sender, EventArgs e)
         {
-            BefInput.Push(" + ");
+            BefInput.Push(((Button)sender).Text);
             TxtCmd.Text += BefInput.Peek();
             TxtCmd.SelectionStart = TxtCmd.TextLength;
             TxtCmd.ScrollToCaret();
         }
 
-        private void BtnSub_Click(object sender, EventArgs e)
+        private void BtnDot_Click(object sender, EventArgs e)
         {
-            BefInput.Push(" - ");
+            BefInput.Push(".");
             TxtCmd.Text += BefInput.Peek();
             TxtCmd.SelectionStart = TxtCmd.TextLength;
             TxtCmd.ScrollToCaret();
         }
 
-        private void BtnMul_Click(object sender, EventArgs e)
+        private void BtnSym_Click(object sender, EventArgs e)
         {
-            BefInput.Push(" * ");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
-        private void BtnDiv_Click(object sender, EventArgs e)
-        {
-            BefInput.Push(" / ");
+            BefInput.Push(" " + ((Button)sender).Text + " ");
             TxtCmd.Text += BefInput.Peek();
             TxtCmd.SelectionStart = TxtCmd.TextLength;
             TxtCmd.ScrollToCaret();
@@ -465,22 +368,13 @@ namespace BasicCalculator
             }
         }
 
-        private void LeftParentheses_Click(object sender, EventArgs e)
+        private void Parentheses_Click(object sender, EventArgs e)
         {
-            BefInput.Push(" ( ");
+            BefInput.Push(" " + ((Button)sender).Text + " ");
             TxtCmd.Text += BefInput.Peek();
             TxtCmd.SelectionStart = TxtCmd.TextLength;
             TxtCmd.ScrollToCaret();
         }
-
-        private void RightParentheses_Click(object sender, EventArgs e)
-        {
-            BefInput.Push(" ) ");
-            TxtCmd.Text += BefInput.Peek();
-            TxtCmd.SelectionStart = TxtCmd.TextLength;
-            TxtCmd.ScrollToCaret();
-        }
-
 
         private void TxtCmd_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -497,7 +391,11 @@ namespace BasicCalculator
                 case '8':
                 case '9':
                     // (GroupBoxNumber.Controls[string.Format("Btn{0}", (int)(e.KeyChar - '0'))] as Button).PerformClick();
-                    ((Button) GroupBoxNumber.Controls["Btn" + e.KeyChar]).PerformClick();
+                    // ((Button) GroupBoxNumber.Controls["Btn" + e.KeyChar]).PerformClick();
+                    Button btnNum = new Button();
+                    btnNum.Text = e.KeyChar.ToString();
+                    btnNum.Click += BtnNum_Click;
+                    btnNum.PerformClick();
                     break;
 
                 case '.':
@@ -508,27 +406,38 @@ namespace BasicCalculator
                     ((Button)GroupBoxNumber.Controls["BtnResult"]).PerformClick();
                     break;
                 case '(':
-                    ((Button)GroupBoxNumber.Controls["LeftParentheses"]).PerformClick();
-                    break;
+                    // ((Button)GroupBoxNumber.Controls["LeftParentheses"]).PerformClick();
+                    // break;
                 case ')':
-                    ((Button)GroupBoxNumber.Controls["RightParentheses"]).PerformClick();
+                    // ((Button)GroupBoxNumber.Controls["RightParentheses"]).PerformClick();
+                    // break;
+                    Button btnPar = new Button();
+                    btnPar.Text = e.KeyChar.ToString();
+                    btnPar.Click += Parentheses_Click;
+                    btnPar.PerformClick();
                     break;
+
                 case (char) 8: // backspace (백스페이스, (int) 8)
                     // 왜 이건 그룹 내에 포함이 안되는 건가 ?ㅅ?..
                     ((Button)Controls["BtnCE"]).PerformClick();
                     break;
 
                 case '+':
-                    ((Button)groupBoxOperation.Controls["BtnAdd"]).PerformClick();
-                    break;
+                    // ((Button)groupBoxOperation.Controls["BtnAdd"]).PerformClick();
+                    // break;
                 case '-':
-                    ((Button)groupBoxOperation.Controls["BtnSub"]).PerformClick();
-                    break;
+                // ((Button)groupBoxOperation.Controls["BtnSub"]).PerformClick();
+                // break;
                 case '*':
-                    ((Button)groupBoxOperation.Controls["BtnMul"]).PerformClick();
-                    break;
+                // ((Button)groupBoxOperation.Controls["BtnMul"]).PerformClick();
+                // break;
                 case '/':
-                    ((Button)groupBoxOperation.Controls["BtnDiv"]).PerformClick();
+                    // ((Button)groupBoxOperation.Controls["BtnDiv"]).PerformClick();
+                    // break;
+                    Button btnSym = new Button();
+                    btnSym.Text = e.KeyChar.ToString();
+                    btnSym.Click += BtnSym_Click;
+                    btnSym.PerformClick();
                     break;
 
                 default:
