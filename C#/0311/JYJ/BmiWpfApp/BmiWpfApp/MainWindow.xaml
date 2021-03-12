@@ -1,0 +1,51 @@
+﻿<Window x:Class="BmiWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BmiWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="BMI Calculator" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="75"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Row="1" Margin="10" CornerRadius="25" BorderBrush="OrangeRed" BorderThickness="4">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Width="100" BorderBrush="White" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Foreground="LightGray" Text="키 입력" TextAlignment="Center" Margin="10"/>
+                    <Label Content="키(CM)" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" Margin="10" CornerRadius="25" BorderBrush="DarkSlateBlue" BorderThickness="4">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Width="120" BorderBrush="White" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Foreground="LightGray" Text="몸무게 입력" TextAlignment="Center" Margin="10"/>
+                    <Label Content="몸무게(KG)" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+                
+           
+        </Grid>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Height="35" Width="100" Margin="0,0,20,0" BorderBrush="White" Content="BMI 결과는?" HorizontalAlignment="Right"/>
+            <Button Grid.Column="1" HorizontalAlignment="Left" Height="35" Width="130" Margin="5,0,0,0" BorderBrush="White" Content="..."></Button>
+        </Grid>
+    </Grid>
+</Window>
