@@ -1,0 +1,25 @@
+﻿<Window x:Class="BMI_Calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BMI_Calc"
+        mc:Ignorable="d"
+        Title="BMI 계산기" Height="400" Width="350">
+    <Grid Background="BlanchedAlmond">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <Label Width="100">키(cm)</Label>
+                <TextBox Name="txtHeight" Width="150"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <Label Width="100">체중(kg)</Label>
+                <TextBox Name="txtWeight" Width="150"></TextBox>
+            </StackPanel>
+            <Button Name="btnBMI" Margin="110, 10,10,10" 
+              Width="100" Height="30" 
+              Click="btnBMI_Click">BMI 계산</Button>
+            <Label Name="lblResult" Margin="10" Width="250">결과는 :</Label>
+        </StackPanel>
+    </Grid>
+</Window>
