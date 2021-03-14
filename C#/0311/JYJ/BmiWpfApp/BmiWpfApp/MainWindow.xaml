@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BmiWpfApp"
         xmlns:local1="clr-namespace:OutlinedTextBlock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600" ResizeMode="CanMinimize">
+        Title="MainWindow" Height="450" Width="600" ResizeMode="CanMinimize" Icon="bmi.ico">
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
