@@ -46,8 +46,7 @@ namespace _99dan
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex}");
-                return;
+                MessageBox.Show("숫자를 입력해주세요");
             }
             
         }
