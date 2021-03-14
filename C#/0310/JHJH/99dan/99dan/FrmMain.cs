@@ -24,23 +24,32 @@ namespace _99dan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //int.Parse(textBox1.Text);
-            if (textBox1.Text == null || textBox1.Text == "")
+            var str = textBox1.Text;
+            int num = int.Parse(str);
+            try
             {
-                MessageBox.Show("숫자를 입력해주세요");
-                return;
-            }
-            else if (listBox1.Items.Count != 0)
-            {
-                listBox1.Items.Clear();
-            }
-            else
-            {
-                for (int i = 0; i < 10; i++)
+                if (str == "")
                 {
-                    textBox1.Text * i
+                    MessageBox.Show("숫자를 입력해주세요");
+                }
+                else if (listBox1.Items.Count != 0)
+                {
+                    listBox1.Items.Clear();
+                }
+                else
+                {
+                    for (int i = 1; i < 10; i++)
+                    {
+                        listBox1.Items.Add($"{num} * {i} = {num * i}");
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex}");
+                return;
+            }
+            
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
