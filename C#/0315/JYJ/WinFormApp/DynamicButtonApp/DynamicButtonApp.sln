@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicButtonApp", "DynamicButtonApp\DynamicButtonApp.csproj", "{3DA02082-68B9-4DDC-BFC3-DAB2E4DCEEA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DA02082-68B9-4DDC-BFC3-DAB2E4DCEEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA02082-68B9-4DDC-BFC3-DAB2E4DCEEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA02082-68B9-4DDC-BFC3-DAB2E4DCEEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA02082-68B9-4DDC-BFC3-DAB2E4DCEEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDFE2C87-7D7B-41F2-8BBD-7B859BD1A806}
+	EndGlobalSection
+EndGlobal
