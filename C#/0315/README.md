@@ -6,4 +6,4 @@
 
 - 윈폼을 통한 동적버튼 만들기
 
-[도움링크(https://afsdzvcx123.tistory.com/entry/C-%EC%9C%88%ED%8F%BC-%EC%9C%88%ED%8F%BC-%EB%B2%84%ED%8A%BC-%EB%8F%99%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0Dynamic-Button?category=784689)
+[도움링크](https://afsdzvcx123.tistory.com/entry/C-%EC%9C%88%ED%8F%BC-%EC%9C%88%ED%8F%BC-%EB%B2%84%ED%8A%BC-%EB%8F%99%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0Dynamic-Button?category=784689)
