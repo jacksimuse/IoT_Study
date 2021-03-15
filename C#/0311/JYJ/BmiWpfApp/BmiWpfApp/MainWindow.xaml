@@ -4,48 +4,144 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BmiWpfApp"
+        xmlns:local1="clr-namespace:OutlinedTextBlock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600">
-    <Grid>
+        Title="MainWindow" Height="450" Width="600" ResizeMode="CanMinimize" Icon="bmi.ico">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <!--<Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard AutoReverse="True" BeginTime="0" >
+                    <DoubleAnimation Storyboard.TargetName="MyGrid"
+                                     Storyboard.TargetProperty="Color"
+                                     From="" To="" Duration="0:0:10"/>-->
+    <!--<ColorAnimation To="Blue" 
+                            Storyboard.TargetName="MyGrid"
+                            Storyboard.TargetProperty="Background.Color" 
+                            FillBehavior="HoldEnd" 
+                            Duration="0:0:5"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>-->
+    <Grid x:Name="MyGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/exercise.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <!--
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Yellow" Offset="0"/>
+                <GradientStop Color="Orange" Offset="0.2"  x:Name="Foo"/>
+                <GradientStop Color="Red" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>-->
+
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <TextBlock Text="BMI Calculator" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="75"></TextBlock>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <local1:OutlinedTextBlock x:Name="textOutline" 
+                                      Text="BMI CALCULATOR" 
+                                      VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                      FontSize="55"
+     StrokeThickness="2" Stroke="Black" Fill="White" FontFamily="Consolas"/>
+
         </Grid>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            
+
             <Border Grid.Row="1" Margin="10" CornerRadius="25" BorderBrush="OrangeRed" BorderThickness="4">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBox Width="100" BorderBrush="White" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
-                             Foreground="LightGray" Text="키 입력" TextAlignment="Center" Margin="10"/>
-                    <Label Content="키(CM)" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <TextBox x:Name="TxtHeight" Background="Transparent" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Foreground="LightGray" Text="키 입력" TextAlignment="Center" 
+                             Margin="10" BorderThickness="0"
+                             GotFocus="TxtHeight_GotFocus" LostFocus="TxtHeight_LostFocus"/>
+                    <Label Content="(CM)" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
             <Border Grid.Row="1" Grid.Column="1" Margin="10" CornerRadius="25" BorderBrush="DarkSlateBlue" BorderThickness="4">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBox Width="120" BorderBrush="White" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
-                             Foreground="LightGray" Text="몸무게 입력" TextAlignment="Center" Margin="10"/>
-                    <Label Content="몸무게(KG)" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold"/>
+                    <TextBox x:Name="TxtWeight" Background="Transparent" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Foreground="LightGray" Text="몸무게 입력" TextAlignment="Center" 
+                             Margin="10,10,20,10" BorderThickness="0"
+                             GotFocus="TxtWeight_GotFocus" LostFocus="TxtWeight_LostFocus"/>
+                    <Label Content="(KG)" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
-                
-           
+
+
         </Grid>
-        
-        <Grid Grid.Row="2">
+
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <!--<ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>-->
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Height="35" Width="100" Margin="0,0,20,0" BorderBrush="White" Content="BMI 결과는?" HorizontalAlignment="Right"/>
-            <Button Grid.Column="1" HorizontalAlignment="Left" Height="35" Width="130" Margin="5,0,0,0" BorderBrush="White" Content="..."></Button>
+            <StackPanel Orientation="Vertical" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <!-- 버튼 외관 반짝이는 애니메이션 넣기 
+                repeat-->
+                <Popup Name="ResultPopup" Placement="Mouse">
+                    <StackPanel x:Name="PopupPanel" Background="PaleGreen">
+                        <Label x:Name="PopupLabel" HorizontalAlignment="Center"
+                               Content="Click to hide" FontWeight="Bold"></Label>
+                        <Button x:Name="BackPopupBtn" Margin="10" Click="BackPopupBtn_Click">Hide</Button>
+                    </StackPanel>
+                </Popup>
+                <Popup Name="TablePopup" Placement="Top" MouseLeftButtonDown="TablePopup_MouseLeftButtonDown">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                            <RowDefinition Height="1*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Background="DarkRed">
+                            <Label HorizontalAlignment="Center"
+                               Content="BMI : 35 ~ (고도 비만)" FontWeight="Bold"></Label>
+                        </Grid>
+                        <Grid Grid.Row="1" Background="IndianRed">
+                            <Label HorizontalAlignment="Center"
+                               Content="BMI : 30 ~ 34.9 (중도 비만)" FontWeight="Bold"></Label>
+                        </Grid>
+                        <Grid Grid.Row="2" Background="OrangeRed">
+                            <Label HorizontalAlignment="Center"
+                               Content="BMI : 25 ~ 29.9 (경도 비만)" FontWeight="Bold"></Label>
+                        </Grid>
+                        <Grid Grid.Row="3" Background="Red">
+                            <Label HorizontalAlignment="Center"
+                               Content="BMI : 23 ~ 24.9 (과체중)" FontWeight="Bold"></Label>
+                        </Grid>
+                        <Grid Grid.Row="4" Background="ForestGreen">
+                            <Label HorizontalAlignment="Center"
+                               Content="BMI : 18.5 ~ 22.9 (정상)" FontWeight="Bold"></Label>
+                        </Grid>
+                        <Grid Grid.Row="5" Background="Green">
+                            <Label HorizontalAlignment="Center"
+                               Content="BMI : ~ 18.49 (저체중)" FontWeight="Bold"></Label>
+                        </Grid>
+                    </Grid>
+                </Popup>
+                <Button x:Name="BtnResult" Grid.Column="0" Height="35" Width="100" Margin="0,10,20,10" BorderBrush="Gray" Content="BMI 결과는?" HorizontalAlignment="Right"
+                    Click="BtnResult_Click" Background="#FFDDDDDD" BorderThickness="0"/>
+                <Button x:Name="BtnTable" Grid.Column="1" HorizontalAlignment="Left" Height="35" Width="130" Margin="5,10,0,10" BorderBrush="Gray" Content="BMI 기준표..."
+                    Click="BtnTable_Click" Background="#FFDDDDDD" BorderThickness="0"></Button>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>
