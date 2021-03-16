@@ -65,8 +65,9 @@ namespace YeJay
 
         public void StopWatch_Tick(object sender, EventArgs e)
         {
-            ShowTime();
+            
             IncreaseSecond();
+            ShowTime();
         }
 
         private void ShowTime()
@@ -79,9 +80,6 @@ namespace YeJay
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            timer1.Interval = 1000; // interval이 ms단위이므로 1000해주면 1초
-            // Timer Tick 이벤트
-            timer1.Tick += StopWatch_Tick;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -96,6 +94,14 @@ namespace YeJay
             seconds = 0;
 
             ShowTime();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+            timer1.Interval = 1000; // interval이 ms단위이므로 1000해주면 1초
+            // Timer Tick 이벤트
+            timer1.Tick += StopWatch_Tick;
         }
     }
 }
