@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockApp", "BlockApp\BlockApp.csproj", "{D580880B-66A1-4478-B7C1-C3C5377244FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D580880B-66A1-4478-B7C1-C3C5377244FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D580880B-66A1-4478-B7C1-C3C5377244FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D580880B-66A1-4478-B7C1-C3C5377244FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D580880B-66A1-4478-B7C1-C3C5377244FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7939902B-33DD-4DAE-A1B4-9B265E58A0BB}
+	EndGlobalSection
+EndGlobal
