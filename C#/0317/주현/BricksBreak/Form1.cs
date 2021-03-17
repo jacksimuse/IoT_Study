@@ -179,8 +179,23 @@ namespace BricksBreak
             // ball이 화면 아래보다 더 내려갔다면, 라켓으로 받아내지 못한 것이므로 죽은 것
             if (ball.Y > ClientSize.Height)
             {
+                MessageBox.Show($"{nBlocks / 20} 레벨 실패 ㅠㅠ","실패")
+                
+                nBlocks = 20;
+
+                initbVisible();
+                initRacket();
+                initBall();
+                initBlocks();
+
+                clearedBlocks = 0;
+
                 StartBall();
-                return;
+                myTimer.Start();
+                
+
+                //StartBall();
+                //return;
             }
 
             // 블록의 맨 아래 위치보다 볼이 더 아래에 있다면 블록과의 intersect를 비교하지 않는다
@@ -203,13 +218,13 @@ namespace BricksBreak
 
                         if (nBlocks == MaxBlocks)
                         {
-                            MessageBox.Show("Final Stage Cleared!", "Mission Completed!!", MessageBoxButtons.OK);
+                            MessageBox.Show("모든 레벨을 클리어하셨습니다! 짝짝짝", "클리어", MessageBoxButtons.OK);
                             this.Close();
                         }
                         else
                         {
-                            string str = string.Format("Level {0} Completed! Play More?", nBlocks / 20);
-                            DialogResult result = MessageBox.Show(str, "Level Clear!", MessageBoxButtons.YesNo);
+                            string str = string.Format("{0}레벨 클리어! 계속하시겠습니까?", nBlocks / 20);
+                            DialogResult result = MessageBox.Show(str, "클리어", MessageBoxButtons.YesNo);
                             if (result == DialogResult.Yes)
                                 newLevelStart();
                             else
@@ -237,6 +252,8 @@ namespace BricksBreak
             StartBall();
             myTimer.Start();
         }
+
+        
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -282,17 +299,17 @@ namespace BricksBreak
             drawBall();
         }
 
-        private void MnuStart_Click(object sender, EventArgs e)
+        private void MnuStart_Click(object sender, EventArgs e) //시작 메뉴
         {
             myTimer.Start();
         }
 
-        private void MnuStop_Click(object sender, EventArgs e)
+        private void MnuStop_Click(object sender, EventArgs e) //그만 메뉴
         {
             myTimer.Stop();
         }
 
-        private void MnuHelp_Click(object sender, EventArgs e)
+        private void MnuHelp_Click(object sender, EventArgs e) //도움말 메뉴
         {
             var form = new AboutBox1();
             form.ShowDialog();
