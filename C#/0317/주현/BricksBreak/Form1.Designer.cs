@@ -36,6 +36,7 @@ namespace BricksBreak
             this.MnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuStop = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.LblLife = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,12 +73,26 @@ namespace BricksBreak
             this.MnuHelp.Text = "도움말";
             this.MnuHelp.Click += new System.EventHandler(this.MnuHelp_Click);
             // 
+            // LblLife
+            // 
+            this.LblLife.AutoSize = true;
+            this.LblLife.BackColor = System.Drawing.Color.White;
+            this.LblLife.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LblLife.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.LblLife.Location = new System.Drawing.Point(234, 2);
+            this.LblLife.Name = "LblLife";
+            this.LblLife.Size = new System.Drawing.Size(54, 20);
+            this.LblLife.TabIndex = 1;
+            this.LblLife.Text = "♥♥♥";
+            this.LblLife.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(284, 485);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(284, 411);
+            this.Controls.Add(this.LblLife);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -99,6 +114,7 @@ namespace BricksBreak
         private System.Windows.Forms.ToolStripMenuItem MnuStart;
         private System.Windows.Forms.ToolStripMenuItem MnuStop;
         private System.Windows.Forms.ToolStripMenuItem MnuHelp;
+        private System.Windows.Forms.Label LblLife;
     }
 }
 

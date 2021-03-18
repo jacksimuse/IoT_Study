@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="brick-breaker.png" />
+    <None Include="background.jpg" />
     <Content Include="brick.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

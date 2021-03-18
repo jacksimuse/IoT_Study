@@ -49,13 +49,15 @@ namespace BricksBreak
         //System.Media.SoundPlayer[] blockSound = new System.Media.SoundPlayer[4];
         private int initialBallPosition;    // 최초 볼의 위치(y 좌표)
 
+        int life = 3;
+
         #endregion
 
         public Form1()
         {
             InitializeComponent();
             ClientSize = new Size(300, 450);
-            this.Text = "벽돌깨기 v1.1";
+            this.Text = "벽돌깨기 v1.2";
 
             initbVisible();
             initRacket();
@@ -180,8 +182,30 @@ namespace BricksBreak
             if (ball.Y > ClientSize.Height)
             {
                 myTimer.Stop();
+                life--; //죽을때마다 목숨 1씩 감소
+                LblLife.Text = LblLife.Text.Substring(1);
+                if (life == 0)
+                {
+                    MessageBox.Show("모든 공을 다 썼어요 .. ", "실패");
+                    life = 3;
+                    LblLife.Text = "♥♥♥";
+                    
+                    if (MessageBox.Show("다시 도전하시겠습니까?", "다시 시작", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        nBlocks = 20;
+                        initbVisible();
+                        initRacket();
+                        initBall();
+                        initBlocks();
 
-                if (MessageBox.Show($"레벨 {nBlocks / 20} 실패 ㅠㅠ", "레벨 실패", MessageBoxButtons.OK) == DialogResult.OK)
+                        clearedBlocks = 0;
+
+                        StartBall();
+                        myTimer.Start();
+                        return;
+                    }
+                }
+                else if (MessageBox.Show($"레벨 {nBlocks / 20} 실패 ㅠㅠ", "레벨 실패", MessageBoxButtons.OK) == DialogResult.OK)
                 {
                     initbVisible();
                     initRacket();
@@ -192,8 +216,10 @@ namespace BricksBreak
 
                     StartBall();
                     myTimer.Start();
-                    
+                    return;
+
                 }
+
                 
                 //StartBall();
                 //return;
