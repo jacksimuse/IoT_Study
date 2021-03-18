@@ -25,7 +25,7 @@ namespace BricksBreak
         Brush ballColor = new SolidBrush(Color.Gold);
         Pen pen = new Pen(Color.Black);
 
-        int racketY = 480;  // racket의 위치
+        int racketY = 430;  // racket의 위치(높이)
         int formW = 300;  // Form의 폭
         int racketW = 50;
         int racketH = 10;
@@ -54,8 +54,8 @@ namespace BricksBreak
         public Form1()
         {
             InitializeComponent();
-            ClientSize = new Size(300, 500);
-            this.Text = "벽돌깨기 v1.0";
+            ClientSize = new Size(300, 450);
+            this.Text = "벽돌깨기 v1.1";
 
             initbVisible();
             initRacket();
@@ -66,7 +66,7 @@ namespace BricksBreak
 
             myTimer.Tick += myTimer_Tick;
 
-            timer1.Interval = 100;  // milliseconds
+            timer1.Interval = 10;  // milliseconds
             timer1.Start();
         }
 
@@ -124,8 +124,8 @@ namespace BricksBreak
         #region DRAW
         private void drawBall() //공 그리기
         {
-            g.FillRectangle(ballColor, ball);
-            g.DrawRectangle(pen, ball);
+            g.FillEllipse(ballColor, ball);
+            g.DrawEllipse(pen, ball);
         }
 
         private void drawRacket() //라켓 그리기
@@ -179,21 +179,22 @@ namespace BricksBreak
             // ball이 화면 아래보다 더 내려갔다면, 라켓으로 받아내지 못한 것이므로 죽은 것
             if (ball.Y > ClientSize.Height)
             {
-                MessageBox.Show($"{nBlocks / 20} 레벨 실패 ㅠㅠ","실패")
+                myTimer.Stop();
+
+                if (MessageBox.Show($"레벨 {nBlocks / 20} 실패 ㅠㅠ", "레벨 실패", MessageBoxButtons.OK) == DialogResult.OK)
+                {
+                    initbVisible();
+                    initRacket();
+                    initBall();
+                    initBlocks();
+
+                    clearedBlocks = 0;
+
+                    StartBall();
+                    myTimer.Start();
+                    
+                }
                 
-                nBlocks = 20;
-
-                initbVisible();
-                initRacket();
-                initBall();
-                initBlocks();
-
-                clearedBlocks = 0;
-
-                StartBall();
-                myTimer.Start();
-                
-
                 //StartBall();
                 //return;
             }
@@ -223,7 +224,7 @@ namespace BricksBreak
                         }
                         else
                         {
-                            string str = string.Format("{0}레벨 클리어! 계속하시겠습니까?", nBlocks / 20);
+                            string str = string.Format("레벨 {0} 클리어! 계속하시겠습니까?", nBlocks / 20);
                             DialogResult result = MessageBox.Show(str, "클리어", MessageBoxButtons.YesNo);
                             if (result == DialogResult.Yes)
                                 newLevelStart();
