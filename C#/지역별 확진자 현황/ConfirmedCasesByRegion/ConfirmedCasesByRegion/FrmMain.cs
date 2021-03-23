@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MetroFramework;
+using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,9 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ConfirmedCasesByRegion
 {
-    public partial class FrmMain : Form
+    public partial class FrmMain : MetroForm
     {
         public FrmMain()
         {

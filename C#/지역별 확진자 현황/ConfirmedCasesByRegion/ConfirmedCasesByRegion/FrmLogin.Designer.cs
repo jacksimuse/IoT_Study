@@ -40,7 +40,7 @@ namespace ConfirmedCasesByRegion
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 43);
+            this.label1.Location = new System.Drawing.Point(79, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 12);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace ConfirmedCasesByRegion
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 80);
+            this.label2.Location = new System.Drawing.Point(33, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 12);
             this.label2.TabIndex = 1;
@@ -57,30 +57,31 @@ namespace ConfirmedCasesByRegion
             // 
             // TxtId
             // 
-            this.TxtId.Location = new System.Drawing.Point(101, 40);
+            this.TxtId.Location = new System.Drawing.Point(101, 73);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(132, 21);
             this.TxtId.TabIndex = 2;
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(101, 77);
+            this.TxtPassword.Location = new System.Drawing.Point(101, 106);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(132, 21);
             this.TxtPassword.TabIndex = 3;
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(53, 121);
+            this.BtnLogin.Location = new System.Drawing.Point(53, 133);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(87, 47);
             this.BtnLogin.TabIndex = 4;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(146, 121);
+            this.BtnCancel.Location = new System.Drawing.Point(146, 133);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(87, 47);
             this.BtnCancel.TabIndex = 5;
@@ -100,6 +101,7 @@ namespace ConfirmedCasesByRegion
             this.Controls.Add(this.label1);
             this.Name = "FrmLogin";
             this.Text = "FrmLogin";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
