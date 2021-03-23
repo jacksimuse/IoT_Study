@@ -37,7 +37,8 @@ namespace ConfirmedCasesByRegion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "FrmMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "지역별 확진자 수 그래프";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
 
