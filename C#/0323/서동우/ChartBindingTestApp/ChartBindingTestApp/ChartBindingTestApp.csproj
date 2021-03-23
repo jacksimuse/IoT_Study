@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0F8793E-9135-43DA-9566-688506879EC7}</ProjectGuid>
+    <ProjectGuid>{576C38A4-16C7-4D2A-8850-3C3F31973EDE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ChartBindingTest</RootNamespace>
-    <AssemblyName>ChartBindingTest</AssemblyName>
+    <RootNamespace>ChartBindingTestApp</RootNamespace>
+    <AssemblyName>ChartBindingTestApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
