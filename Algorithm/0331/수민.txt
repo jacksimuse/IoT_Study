@@ -1,0 +1,32 @@
+# 3월 31일 예제
+
+## 1단계 입출력과 사칙연산부터 시작
+1.곱셈
+
+using System;
+
+namespace ConsoleApp2
+{
+    internal class ProgramBase
+    {
+        static void Main(string[] args )
+        {
+
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+
+            int num3 = (a * (b % 10));
+            int num4 = (a * ((b / 10) % 10));
+            int num5 = (a * ((b / 100) % 10));
+
+
+            Console.WriteLine(a * (b % 10));
+            Console.WriteLine(a * ((b / 10) % 10));
+            Console.WriteLine(a * ((b / 100) % 10));
+            Console.WriteLine(num3 + (num4 * 10) + (num5 * 100));
+
+        }
+    }
+}
+
+2. 나머지
