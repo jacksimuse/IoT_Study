@@ -1,6 +1,6 @@
 ![첫번째문제](https://github.com/jacksimuse/IoT_Study/blob/main/Algorithm/0331/%EC%84%9C%EB%8F%99%EC%9A%B0/0331_FirstAlgorithm/FirstAlgorithm.png)
 
-1. 곱셈 <br>
+## 1. 곱셈 <br>
 첫번째 문제는 A와 곱해지는 B의 숫자 하나를 빼내서 곱하는 것을 구하는 문제입니다. <br>
 385에서 <br> 5만 빼내기위해 b%10 <br>
         8만 빼내기위해 (b/10 % 10) <br>
@@ -8,7 +8,7 @@
 %, / 를 이용해서 원하는 숫자를 추출할 수 있느냐가 핵심인듯
 
 
-2. 나머지 <br>
+## 2. 나머지 <br>
 두번째 문제에서 예제 입력을 보면 5 8 4 로 되있는데, 이는 한꺼번에 3개의 숫자를 입력받고 엔터를 하는 것을 뜻하는것 같습니다.
 실제로 Console.ReadLine()을 a,b,c에 각각 하나씩 입력받아서 3줄을 작성했었는데 이렇게하면 <br>
 5 <br>
