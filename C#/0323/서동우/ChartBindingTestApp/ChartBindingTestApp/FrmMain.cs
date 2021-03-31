@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ChartBindingTest
+namespace ChartBindingTestApp
 {
     // Data Source=127.0.0.1;Initial Catalog=COVID-19;User ID=sa;Password=mssql_p@ssw0rd!
 
@@ -47,7 +47,6 @@ namespace ChartBindingTest
         }
     }
 
-    // 확진자 수, 확진자 날짜를 클래스 변수로 선언할 예정
     class Student
     {
         public string Name { get; set; }
@@ -60,3 +59,4 @@ namespace ChartBindingTest
         }
     }
 }
+
