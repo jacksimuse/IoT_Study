@@ -30,3 +30,5 @@ namespace ConsoleApp2
 }
 
 2. 나머지
+
+계속 오류 나서 내일 완료해서 올릴게염...ㄸㄹㄹ.....OTL
