@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "입출력과 사칙연산", "입출력과 사칙연산\입출력과 사칙연산.csproj", "{155C218B-6A21-459E-AF9D-8944A5AF4100}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "곱셈", "입출력과 사칙연산\곱셈.csproj", "{155C218B-6A21-459E-AF9D-8944A5AF4100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "나머지", "나머지\나머지.csproj", "{BF682071-147A-44BA-8E1B-79BAD90FDD50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{155C218B-6A21-459E-AF9D-8944A5AF4100}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{155C218B-6A21-459E-AF9D-8944A5AF4100}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{155C218B-6A21-459E-AF9D-8944A5AF4100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF682071-147A-44BA-8E1B-79BAD90FDD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF682071-147A-44BA-8E1B-79BAD90FDD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF682071-147A-44BA-8E1B-79BAD90FDD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF682071-147A-44BA-8E1B-79BAD90FDD50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
