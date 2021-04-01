@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "사분면고르기", "사분면고르기\사분면고르기.csproj", "{A765E647-86E8-476B-AE85-7852D5433673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "윤년", "윤년\윤년.csproj", "{7AC84EDC-5646-4151-8AC3-1FDC976AF3A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A765E647-86E8-476B-AE85-7852D5433673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A765E647-86E8-476B-AE85-7852D5433673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A765E647-86E8-476B-AE85-7852D5433673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A765E647-86E8-476B-AE85-7852D5433673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC84EDC-5646-4151-8AC3-1FDC976AF3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC84EDC-5646-4151-8AC3-1FDC976AF3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC84EDC-5646-4151-8AC3-1FDC976AF3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC84EDC-5646-4151-8AC3-1FDC976AF3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F83750C-73F7-4564-8272-AA30B607A402}
+	EndGlobalSection
+EndGlobal
