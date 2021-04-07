@@ -7,7 +7,7 @@ else:
 
 # Q2
 resident_registration_number = "881120-1068234"
-yyyymmdd = resident_registration_number[:5]
+yyyymmdd = resident_registration_number[:6]
 rest = resident_registration_number[7:]
 print(yyyymmdd)
 print(rest)
