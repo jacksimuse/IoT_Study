@@ -1,4 +1,4 @@
-```python
+```Python
 # Q1
 if 13 % 2 == 0:
     print("13은 짝수")
