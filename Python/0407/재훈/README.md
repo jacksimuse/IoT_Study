@@ -7,17 +7,17 @@ else:
 
 # Q2
 resident_registration_number = "881120-1068234"
-yyyymmdd = resident_registration_number[:6]
-rest = resident_registration_number[7:]
+yyyymmdd = resident_registration_number[:6] // 881120
+rest = resident_registration_number[7:] // 1068234
 print(yyyymmdd)
 print(rest)
 
 # Q3
 pin = "881120-1068234"
-print(pin[7:8])
+print(pin[7:8]) // 1
 
 # Q4
 a = "a:b:c:d"
 b = a.replace(":", "#")
-print(b)
+print(b) // a#b#c#d
 ```
