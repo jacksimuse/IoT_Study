@@ -17,5 +17,5 @@
 
 
 ### [문제4]
-4. 다음과 같은 문자열 a:b:c:d가 있다. 문자열의 replace 함수를 사용하여 a#b#c#d로 바꿔서 출력해 보기.
+4. 다음과 같은 문자열 a: b:c:d가 있다. 문자열의 replace 함수를 사용하여 a#b#c#d로 바꿔서 출력해 보기.
 ![4번문제](https://user-images.githubusercontent.com/77951853/113811221-c32fff00-97a6-11eb-8e37-7211508342dd.png)
