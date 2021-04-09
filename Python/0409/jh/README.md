@@ -12,18 +12,19 @@ else: print("none") # 위에꺼 다 아니면 none 출력
 
 # Q2
 i = 0
-while i < 1001:
-  i = i + 1
-  if i %  3 == 0:
-   a = + i
+a= 0 // 3의 배수들을 담을 그릇
+while i < 1001: // i가 1001보다 작을동안 반복실행
+  i = i + 1 // i 1씩 증가
+  if i %  3 == 0: // 3의 배수
+   a = + i // 3의 배수들이 그릇에 더해지는중
 print(a)
 
 # Q3
 i = 0
 while i < 6:
   i = i + 1
-  print("*" * i)
-print(' ')
+  print("*" * i) // i개수만큼 *이 찍힘
+print(' ')// 다음 줄로 넘기기
 
 # Q4
 a = range(100)
@@ -33,15 +34,14 @@ for i in a:
   
 # Q5
 score = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
-sum = 0
+sum = 0 // 각 요소들을 담을 그릇
 for a in score:
-  sum += a
+  sum += a // 각 요소들이 그릇에 더해지는 중
 average = sum / 10
-print(sum)
 print(average)
 
 # Q6
 numbers = [1, 2, 3, 4, 5]
-result = [n * 2 for n in numbers if n % 2 == 1]
+result = [n * 2 for n in numbers if n % 2 == 1] 
 print(result)
 ```
