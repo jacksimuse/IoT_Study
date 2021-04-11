@@ -17,18 +17,19 @@ while a<5 :
         b=b+1
         print("*", end="")
     print(" ")
-
+    
+#Q3
 for num in range(1,101) :
     print(num)
     
-#Q3
+#Q4
 A = [70,60,55,75,95,90,80,80,85,100]
 sum =0
 for i in A:
     sum=sum+i
 print(sum/10)
 
-#Q4
+#Q5
 numbers = [1, 2, 3, 4, 5]
 result = [n*2 for n in numbers if n % 2 ==1]
 print(result)
