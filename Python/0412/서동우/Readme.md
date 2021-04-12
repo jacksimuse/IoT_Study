@@ -77,3 +77,41 @@ https://programmers.co.kr/learn/courses/30/lessons/12916
 대문자와 소문자가 섞여있는 문자열 s가 주어집니다. s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True, 다르면 False를 return 하는 solution를 완성하세요. 'p', 'y' 모두 하나도 없는 경우는 항상 True를 리턴합니다. 단, 개수를 비교할 때 대문자와 소문자는 구별하지 않습니다.
 
 예를 들어 s가 "pPoooyY"면 true를 return하고 "Pyy"라면 false를 return합니다.
+
+```python
+# 개발할때 코드
+pCount = 0;
+yCount = 0; 
+input = list(input())
+for i in input:
+   if(i == 'p' or i == 'P'):
+     pCount = pCount + 1
+   elif(i == 'y' or i == 'Y'):
+     yCount = yCount + 1
+
+if(pCount == yCount):
+    print('true')
+else:
+    print('false')
+```
+<br>
+
+```python
+# 제출할때 코드
+def solution(s):
+  input = list(s)
+  pCount = 0;
+  yCount = 0; 
+  for i in input:
+     if(i == 'p' or i == 'P'):
+       pCount = pCount + 1
+     elif(i == 'y' or i == 'Y'):
+       yCount = yCount + 1
+
+  if(pCount == yCount):
+     return True
+  else:
+     return False
+```
+
+파이썬하니까 언어가 퇴화하는것같아요.. input[i]가 왜 안되서 한참헤맸음.. i로도 되는게 참 신기하네요
