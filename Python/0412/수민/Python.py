@@ -1,8 +1,3 @@
-a = int(input())
-def is_odd(a)
-    if a %2 == 0:
-        return True
-    else:
-        return False
-
-is_odd(a)
+is_odd = lambda x: True if x % 2 ==1 else False
+is_odd(3)
+is_odd(4)
