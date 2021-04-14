@@ -1,6 +1,3 @@
-0414 : 점프 투 파이썬 5장 학습 및 연습문제 풀기
-https://wikidocs.net/42529
-
 # Q1
 
 다음은 Calculator 클래스이다.
