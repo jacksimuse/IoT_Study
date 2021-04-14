@@ -1,6 +1,7 @@
 https://wikidocs.net/42528
 
 # Q1 주어진 자연수가 홀수인지 짝수인지 판별해 주는 함수(is_odd)를 작성해 보자.
+## 답)
 ```python
 def is_odd(number):
 	if number % 2 == 0:
@@ -12,11 +13,16 @@ def is_odd(number):
 
 
 # Q2 입력으로 들어오는 모든 수의 평균 값을 계산해 주는 함수를 작성해 보자. (단 입력으로 들어오는 수의 개수는 정해져 있지 않다.)
+## 답)
 ```python
-
-
+def avg_number(*args):
+     a = 0
+     for i in args:
+         a += i
+     return a / len(args)
 
 ```
+
 # Q3
 다음은 두 개의 숫자를 입력받아 더하여 돌려주는 프로그램이다.
 
@@ -36,12 +42,29 @@ print("두 수의 합은 %s 입니다" % total)
 ```
 3과 6을 입력했을 때 9가 아닌 36이라는 결괏값을 돌려주었다. 이 프로그램의 오류를 수정해 보자.
 
+```python
+input1 = input("첫번째 숫자를 입력하세요:")
+input2 = input("두번째 숫자를 입력하세요:")
+
+total = int(input1) + int(input2)
+print("두 수의 합은 %s 입니다" % total)
+
+```
+  
 # Q6
 사용자의 입력을 파일(test.txt)에 저장하는 프로그램을 작성해 보자. 
 
 (단 프로그램을 다시 실행하더라도 기존에 작성한 내용을 유지하고 새로 입력한 내용을 추가해야 한다.)
 
+```python
+file = open("test.txt",'w')
+file.write("Life is too short!")
+file.close()
 
+file2 = open("test.txt",'r')
+print(file2.read())
+file2.close()
+```
 -----------------------------------------------------
 ## 추가 문제
 재밌는 풀 수 있을만한 문제를 찾았는데, 풀고 싶은 사람만 연습삼아 풀어보면 될 것 같습니당
