@@ -1,2 +1,4 @@
-list = [1, -2, 3, -5, 8, -3]
-list(filter(lambda x:x * -1)
+a = 17 / 3
+b = round(a,4)
+
+print(b)
