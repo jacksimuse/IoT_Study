@@ -18,7 +18,7 @@ cal.minus(7)
 
 print(cal.value) # 10에서 7을 뺀 3을 출력
 ```
-## 답
+## 답 )
 ```python
 class Calculator:
     def __init__(self):
@@ -59,7 +59,7 @@ class Calculator:
         self.value += val
 ```
 
-## 답
+## 답 )
 ```python
 
 class Calculator:
