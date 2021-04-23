@@ -1,5 +1,6 @@
 def solution(characters):
     result = ""
+    #result += characters[0] 이 문장을 뺴줘야 s가 안들어감
     for i in range(len(characters)):
         if characters[i - 1] != characters[i]:
             result += characters[i]

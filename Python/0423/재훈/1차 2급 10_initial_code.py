@@ -1,6 +1,6 @@
 def solution(data):
     total = sum(data)
-    average =  total / len(data)
+    average =  total / len(data) # 평균은 전체값 나누기 갯수입니다
     cnt = 0
     for d in data:
         if d <= average:
