@@ -1,3 +1,4 @@
+## 저작권(백준 2914번 문제)
 ```C
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
