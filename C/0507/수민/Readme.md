@@ -1,6 +1,6 @@
 ### [ 1번 문제. 2차원 배열의 합 ](https://www.acmicpc.net/problem/2167)
 
-[참고 한 사이트](https://j0n9m1n1.dev/115)
+[참고 한 사이트](https://j0n9m1n1.dev/115)<br>
 👉 주석은 내일 달게요...😴😴
 ```C
 #define _CRT_SECURE_NO_WARNINGS
