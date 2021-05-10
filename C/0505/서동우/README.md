@@ -35,3 +35,8 @@ int main()
 4. 17행 scanf를 통해 숫자(repeatNum)와 문자열(inputText)을 입력받고, 문자열의 길이만큼 19행의 for문을 돌립니다.<br>
 5. 21행 for문에서 입력받았던 숫자(repeatNum)만큼 for문을 돌리는데 문자열(inputText)을 하나씩 반복해야하므로 inputText[i]를 출력합니다. <br>
 (만약 숫자와 문자열을 3 ABC 을 입력받았다고 가정할때, i = 0 일때 AAA, i = 1일때 BBB, i = 2일때 CCC가 출력됩니다)
+<br><br><br>
+
+//// 210510  /////
+아니 커밋하니까 줄번호 다 어디갔누.. 나중에 수
+
