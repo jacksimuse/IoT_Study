@@ -13,19 +13,19 @@ int main(void)
 	int a, b;
 
 	printf("비교할 두 정수를 입력하세요 : \n");
-	scanf("%d %d", &a, &b);
+	scanf("%d %d", &a, &b);	//비교할 정수 입력받기
 	
-	while (0 <= a, b < 10000)
+	while (a, b <= 1000000)	// a랑 b가 0보다 백만보다 작거나 같을때 반복한다
 	{
-		if (a > b)
+		if (a > b)	
 		{
 			printf("Yes\n");
 		}
-		else if (a == 0 && b == 0)
+		else if (a == 0 && b == 0)	//a와 b가 0일때
 		{
 			printf("Yes\n");
 			printf("탈출합니다");
-			break;
+			break;			// yes, 탈출합니다 를 출력하고 반복문 탈출(종료)
 		}
 		else
 			printf("NO\n");
