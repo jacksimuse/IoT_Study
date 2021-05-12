@@ -5,16 +5,15 @@
 int main()
 {
 	int a, b;
-	//scanf("%d", &T);
 
 	while (1)
 	{
-		scanf("%d %d", &a, &b);
-		if (a > b) printf("Yes\n"); 
-		else if (a <= b)
+		scanf("%d %d", &a, &b); // 값 받기
+		if (a > b) printf("Yes\n");  // 크기비교 크면 yes
+		else if (a <= b) 
 		{
-			if (a == b && a == 0) break;
-			printf("No\n");
+			if (a == b && a == 0) break; // a와 b가 0 일때 종료
+			printf("No\n"); // 같거나 작으면 no
 		} 
 	}
 }
