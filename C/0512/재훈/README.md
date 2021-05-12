@@ -1,4 +1,4 @@
-# 자릿수어하기
+# 자릿수더하기
 ```C
 #include <stdio.h>
 #include <stdbool.h>
