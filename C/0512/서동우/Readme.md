@@ -100,11 +100,11 @@ char* solution(int n) {
     {
        if (i % 2 == 1) 
        {
-          strcat(answer, "수");       // strcat은 문자열을 합쳐주는 함수. NULL문자 + 수 가 들어감
+          strcat(answer, "수");       // strcat은 문자열을 합쳐주는 함수. 홀수일때 answer + "수"
        }
        else
        {
-          strcat(answer, "박");       // 마찬가지로 짝수일때는 answer + 박 이 들어감.
+          strcat(answer, "박");       // 마찬가지로 짝수일때는 answer + "박".
        }
     }
     return answer;
