@@ -18,3 +18,15 @@ int main()
 	}
 }
 ```
+# 아이디 중복??!
+```c
+#include <stdio.h>
+
+int main()
+{
+	char id[50]; // 글자 50자
+	char* id1 = id; // 문자열이라서 포인터로 주소를 가리쳐준다
+	scanf("%s", id1); // 포인터로 값을 받는다
+	printf("%s??!", id1); // 포인터로 출력한다
+}
+```
