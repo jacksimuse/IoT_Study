@@ -21,3 +21,7 @@ int solution(int n) {
 }
 
 ```
+
+
+#### [2. 수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)
+이건 주말ㅇ....
