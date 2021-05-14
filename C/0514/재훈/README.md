@@ -1,4 +1,4 @@
-# 두 정수의 합
+# 두 정수 사이 합
 ```C
 #include <stdio.h>
 #include <stdbool.h>
