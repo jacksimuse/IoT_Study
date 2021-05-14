@@ -20,3 +20,24 @@ int main() {
   solution(5, 3);
 }
 ```
+# 약수의 합
+```C
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+int solution(int n) {
+    int answer = 0;
+    for (int i = 1; i <= n; i++) // 1부터 n까지 i를 증가시키면서 나눠준다 
+    {
+        if (n % i == 0) answer += i; // 나머지가 없으면 answer에 더해준다 
+    }
+    return answer;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n); // 숫자 n을 받는다
+    solution(n);
+}
+```
