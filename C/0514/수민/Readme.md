@@ -48,33 +48,27 @@ int main(void)
 
 ### 제출용 코드
 ```c
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
 long long solution(int a, int b) {
     long long answer = 0;
-    
+
   if(-100000000<a<10000000 && -100000000<b<10000000 ) 
   {   if(a>b)
     {
         for(b;b<=a;b++)
-        {
             answer += b;
-        }
     }
      else if(a<b)
      {
          for(a;a<=b;a++)  
-         {
             answer += a;
-         }
      }
     else //같은 경우
-    {   answer = a;
-    }
-    
+      answer = a;
+
     printf("%lld",answer);
     return answer;
   }
