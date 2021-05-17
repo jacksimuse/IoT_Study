@@ -41,3 +41,21 @@ int main()
 	}
 }
 ```
+# 숫자의 합
+```C
+#include <stdio.h>
+
+int main()
+{
+	int a,b,c = 0;
+	scanf("%d", &a);
+
+	for (int i = 0; i < a; i++)
+	{
+		scanf("%1d", &b);
+		c += b;
+	}
+	printf("%d", c);
+
+}
+```
