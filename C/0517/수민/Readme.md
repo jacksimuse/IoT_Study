@@ -6,9 +6,8 @@
 int main()
 {
 	int n = 0, sum = 0;
-	char num[100] = { 0, };
-
 	scanf("%d", &n);
+	char num[100];	// 배열 저장하는 
 	scanf("%s", num);
 
 	for (int i = 0; i < n; i++)
