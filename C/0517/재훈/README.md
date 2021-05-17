@@ -1,3 +1,5 @@
+# 숫자의 개수
+```C
 #include <stdio.h>
 #include <string.h>
 
@@ -38,3 +40,4 @@ int main()
 		if (i == 8) printf("%d", j[i]);
 	}
 }
+```
