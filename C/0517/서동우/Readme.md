@@ -7,6 +7,8 @@
 예시)
 5
 54321  입력하면 =>  5+4+3+2+1 = 15 출력
+
+
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
