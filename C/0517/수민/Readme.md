@@ -1,4 +1,4 @@
-## 1. 
+## 1. [백준 11720 숫자의 합](https://www.acmicpc.net/problem/11720)
 ```c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
