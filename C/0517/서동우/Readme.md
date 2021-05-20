@@ -63,42 +63,8 @@ int main()
 	{
 		int temp = 0;
 		temp = result % 10;
-		// printf("%d\n", temp);
 		result = result / 10;
-
-		switch (temp)
-		{
-			case 0:
-				iarr[0] += 1;
-				break;
-			case 1:
-				iarr[1] += 1;
-				break;
-			case 2:
-				iarr[2] += 1;
-				break;
-			case 3:
-				iarr[3] += 1;
-				break;
-			case 4:
-				iarr[4] += 1;
-				break;
-			case 5:
-				iarr[5] += 1;
-				break;
-			case 6:
-				iarr[6] += 1;
-				break;
-			case 7:
-				iarr[7] += 1;
-				break;
-			case 8:
-				iarr[8] += 1;
-				break;
-			case 9:
-				iarr[9] += 1;
-				break;
-		}
+		iarr[temp]++;
 	}
 
 	for (int i = 0; i < sizeof(iarr) / sizeof(iarr[0]); i++)
