@@ -24,3 +24,40 @@ int main()
 	}
 }
 ```
+# 수 졍렬하기
+```c
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main()
+{
+	int N, a[1000] = { 0 }, temp;
+	int i = 0, min = 0;
+
+	scanf("%d", &N);	// 테스트 케이스 받기
+
+	for (i = 0; i < N; i++)
+	{
+		scanf("%d", &a[i]);	// 케이스 만큼 숫자 받기
+	}
+
+	while (min != N)	// 최소값 찾기를 N번할때까지
+	{
+		for (i = 0; i < N; i++)
+		{
+			if (a[min] < a[i])	// 최소값이 지금 값보다 크다면
+			{
+				temp = a[min];	// 교체
+				a[min] = a[i];
+				a[i] = temp;
+			}
+		}
+		min++;
+	}
+	
+	for (i = 0; i < N; i++)
+	{
+		printf("%d\n", a[i]);
+	}
+}
+```
