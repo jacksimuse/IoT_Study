@@ -33,10 +33,10 @@ int main()
 			if (spec[0][i] < spec[0][j] && spec[1][i] < spec[1][j]) grade[i] += 1;  // 맨처음부터 끝까지 돌면서 비교하고 덩치가 작으면 등급이 1올라감
 		}
 	}
-  ```
-
+  
 	for (int i = 0; i < T; i++)
 	{
 		cout << grade[i] << " "; // 등급을 담은 배열을 출력
 	}
 }
+```
