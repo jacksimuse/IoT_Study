@@ -7,4 +7,5 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 - 나머지 규칙은 같이 정해보아요~
 
 1주차 <br>
-- 백준 7568번 문제 : [덩치](https://www.acmicpc.net/problem/7568)
+- 0531 백준 7568번 문제 : [덩치](https://www.acmicpc.net/problem/7568)
+- 0602 프로그래머스 월간 코드 챌린지 시즌1 : [삼진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
