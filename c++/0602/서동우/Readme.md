@@ -31,6 +31,7 @@ int solution(int n)
 		return n;
 	}
 
+
 	// 3진수 변환
 	while (1)
 	{
@@ -46,6 +47,7 @@ int solution(int n)
 		}
 	}
 
+
 	// 배열 뒤집기 
 	// arr1 끝부터 처음까지의 값이 
 	// arr2의 처음부터 끝까지의 값이됨
@@ -53,8 +55,7 @@ int solution(int n)
 	{
 		arr2[i] = arr1[count - i];
 	}
-
-
+	
 	
 	// 3진수를 10진수로 변환(arr2의 각 요소에 3의 거듭제곱을 곱해서 다 더해줌)
 	int temp = 1;
