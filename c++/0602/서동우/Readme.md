@@ -1,4 +1,6 @@
-```C
+
+## C로 쌩으로 풀기
+```C++
 /*
 	3진수 뒤집기
 	1. 10진수를 입력받으면 3진수로 변환
@@ -75,5 +77,36 @@ int main()
 	solution(45);   // 7 출력
 	solution(125);  // 229 출력
 	solution(1);    // 1 출력
+}
+```
+
+
+<br><br><br>
+
+## 벡터로 문제풀기(설명 및 주석은 다음에..)
+```C++
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int solution(int n) {
+    int answer = 0;
+    vector<int> v_arr;
+    
+    while(n)
+    {
+        v_arr.push_back(n % 3);
+        n /= 3;
+    }
+    
+    reverse(v_arr.begin(), v_arr.end());
+    
+    for(int i = 0; i < v_arr.size(); i++)
+        answer += pow(3, i) * v_arr[i];
+    
+    return answer;
 }
 ```
