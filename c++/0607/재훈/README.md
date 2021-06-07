@@ -29,3 +29,57 @@ int main()
     printf("%d", solution(a, b));
 }
 ```
+# 두개 뽑아서 더하기
+```C++
+#include <vector>
+#include <iostream>
+using namespace std;
+
+vector<int> solution(vector<int> numbers) {
+    vector<int> answer;     // 답을 받을 배열
+    int box;                // 정렬을 위한 그릇
+    
+    for (int i = 0; i < numbers.size(); i++)    // 배열 사이즈만큼 돌기
+    {
+        for (int j = 1; j < numbers.size(); j++)
+        {
+            if (i == j) continue;   // 같은 수는 받지말기
+            answer.push_back(numbers[i] + numbers[j]);  // 앞뒤자리끼리 계속 더해서 배열에 담기
+        }
+    }
+
+    for (int i = 0; i < answer.size(); i++) 
+    {
+        for (int j = answer.size() - 1; j >= 0; j--)    // i로 고정시키고 뒤에서 부터 비교하기
+        {
+            if (i == j) continue;   // 같은 자리는 패스
+            if (answer[i] == answer[j])     // 요소가 같으면 삭제
+                answer.erase(answer.begin() + j);
+        }
+    }
+
+    for (int i = 0; i < answer.size(); i++)     // 정령
+    {
+        for (int j = i + 1; j < answer.size(); j++)
+        {
+            if (answer[i] > answer[j]) {
+                box = answer[i];
+                answer[i] = answer[j];
+                answer[j] = box;
+            }
+        }
+    }
+    return answer;
+}
+
+int main()
+{
+    vector<int> input = { 0,0,1,1 };
+    
+    for (int i = 0; i < solution(input).size(); i++)
+    {
+        printf("%d ", solution(input)[i]);
+    }
+    
+}
+```
