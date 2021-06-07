@@ -83,3 +83,28 @@ int main()
     
 }
 ```
+# 음양더하기
+```C++
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<int> absolutes, vector<bool> signs) {
+    int answer = 0;
+    for (int i = 0; i < absolutes.size(); i++)  // 절대값 배열크기만큼 돌리기
+    {
+        if (signs[i] == true) answer += absolutes[i];   // bool 배열이 true면 +로 값을 받고 false면 -로 값받기
+        else answer -= absolutes[i];
+    }
+    return answer;
+}
+
+int main()
+{
+    vector<int> input_int = { 1, 2, 3 };
+    vector<bool>input_bool = { false, false, true };
+    
+    printf("%d", solution(input_int, input_bool));
+}
+```
