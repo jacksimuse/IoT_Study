@@ -12,4 +12,7 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 - 0604 프로그래머스 월간 코드 챌린지 시즌1 : [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) <br>
 
 2주차
-- 0607 프로그래머스 월간 코드 챌린지 시즌2 : [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
+- 0607 <br>
+  프로그래머스 월간 코드 챌린지 시즌2 : [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884) <br>
+  프로그래머스 월간 코드 챌린지 시즌2 : [음양더하기](https://programmers.co.kr/learn/courses/30/lessons/76501)         <br>
+  프로그래머스 월간 코드 챌린지 시즌2 : [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644) <br>
