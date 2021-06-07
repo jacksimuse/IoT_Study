@@ -9,4 +9,7 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 1주차 <br>
 - 0531 백준 7568번 문제 : [덩치](https://www.acmicpc.net/problem/7568)
 - 0602 프로그래머스 월간 코드 챌린지 시즌1 : [삼진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
-- 0604 프로그래머스 월간 코드 챌린지 시즌1 : [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645)
+- 0604 프로그래머스 월간 코드 챌린지 시즌1 : [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) <br>
+
+2주차
+- 0607 프로그래머스 월간 코드 챌린지 시즌2 : [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
