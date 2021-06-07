@@ -58,8 +58,11 @@ int main()
 }
 ```
 <br>
+
 ---
+
 <br>
+
 ```C++
 // 두 개 뽑아서 더하기
 #include <string>
@@ -149,8 +152,11 @@ int main()
 }
 ```
 <br>
+
 ---
+
 <br>
+
 ```C++
 // 음양 더하기
 #include <string>
