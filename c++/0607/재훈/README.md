@@ -58,7 +58,7 @@ vector<int> solution(vector<int> numbers) {
         }
     }
 
-    for (int i = 0; i < answer.size(); i++)     // 정령
+    for (int i = 0; i < answer.size(); i++)     // 정렬
     {
         for (int j = i + 1; j < answer.size(); j++)
         {
