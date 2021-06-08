@@ -56,6 +56,7 @@ int main()
 }
 ```
 
+----------------------
 
 ```C
 /*
@@ -140,6 +141,60 @@ int main()
 }
 ```
 
+----------------------
+
+```C++
+/*
+        프로그래머스 두개뽑아서더하기(C++, 벡터풀이)
+	정수배열이 주어질때 서로 다른 두 개의 수를 뽑아 더해서 만들 수 있는 모든 수를
+	오름차순으로 담아 return 하는 문제
+*/
+
+/*
+	구현
+	1. 벡터 배열 선언(answer)
+	2. push_back으로 두개 뽑아서 더한값을 계속 넣어줌
+	3. answer 배열 정렬
+	4. erase와 unique 함수를 사용해서 중복제거
+	5. 출력
+*/
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+vector<int> solution(vector<int> numbers) 
+{
+	vector<int> answer;
+	for (int i = 0; i < numbers.size() - 1; i++)
+	{
+		for (int j = i + 1; j < numbers.size(); j++)
+		{
+			answer.push_back(numbers[i] + numbers[j]);
+		}
+	}
+	sort(answer.begin(), answer.end());                                // 정렬
+	answer.erase(unique(answer.begin(), answer.end()), answer.end());  // 중복 제거
+
+	for (int i = 0; i < answer.size(); i++)  // 출력해보기
+	{
+		cout << answer[i] << endl;
+	}
+
+	return answer;
+}
+
+int main()
+{
+	vector<int> arr1 = { 5,0,2,7 };
+	vector<int> arr2 = { 2, 1, 3, 4, 1 };
+	vector<int> arr3;
+	solution(arr1);
+}
+```
+
+----------------------
 
 ```C
 /*
@@ -189,3 +244,5 @@ int main()
     solution(absolutes, 3, signs, 3);
 }
 ```
+
+----------------------
