@@ -9,7 +9,7 @@ int main()
 {
     string n = "4177252841";        // 테스트할 string
     int k = 4;                      // n에서 잘라낼 숫자 수
-    const int ck = k;               // while문에서 사용하기위해 k를 상수화
+    const int ck = k;               // while문에서 반복문 종료 판단에 사용하기위해 k를 상수화
     char max;                       // 단계별 최댓값을 뽑아내기 위한 임시 최댓값
     int id;                         // 단계별 최댓값의 인덱스
     vector<int> index = { 0 };      // 단계별 최댓값의 인덱스를 저장할 벡터
