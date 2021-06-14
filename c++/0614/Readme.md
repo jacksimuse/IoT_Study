@@ -1,1 +1,1 @@
-# 0614 [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)🥊
+# 0614 [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883)🥊
