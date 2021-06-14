@@ -1,3 +1,4 @@
+```C++
 #include <string>
 #include <vector>
 #include <iostream>
@@ -30,3 +31,4 @@ int main()
     cin >> num >> k;
     cout << solution(num, k);
 }
+```
