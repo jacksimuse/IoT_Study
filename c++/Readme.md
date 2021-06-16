@@ -21,7 +21,7 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 
 3주차
 - 0614 프로그래머스 탐욕법(Greedy) : [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) <br>
-- 0616 프로그래머스 연습문제 : [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/42883) <br>
+- 0616 프로그래머스 연습문제 : [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911) <br>
 
 부록
 - [벡터](https://github.com/jacksimuse/IoT_Study/tree/main/c%2B%2B/%EB%B6%80%EB%A1%9D/%EB%B2%A1%ED%84%B0%EC%A0%95%EB%A6%AC)
