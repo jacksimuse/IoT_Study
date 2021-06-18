@@ -1,8 +1,11 @@
 using namespace std;
 
+bool PrimeTable[10000000] = { false, };
+
 // 소수 판별
 bool isPrime(int n) {
-	if (n <= 1 || !(n % 2))
+
+	if (n <= 1)
 		return false;
 
 	int i;
@@ -26,8 +29,8 @@ bool isPrime(int n) {
 // n : 전체 n개의 원소 (벡터)
 // tmp : 선택된 r개의 원소 (벡터)
 // r : 뽑아야 되는 원소의 수
-// ans : 정답 원소 집합군
-void perm_n_r(vector<int> n, vector<int> tmp, int r, set<int> &ans) {
+// ans : 정답의 개수
+void perm_n_r(vector<int> n, vector<int> tmp, int r, int &ans) {
 
 	// r이 0인 경우 : 원소 선택 완료됨 
 	if (!r) {
@@ -36,9 +39,13 @@ void perm_n_r(vector<int> n, vector<int> tmp, int r, set<int> &ans) {
 			value *= 10;
 			value += element;
 		}
+		cout << value << '\n';
+
 		// 소수면 집합에 추가
-		if (isPrime(value))
-			ans.insert(value);
+		if (isPrime(value) && !PrimeTable[value]) {
+			PrimeTable[value] = true;
+			++ans;
+		}
 
 		return;
 	}
@@ -60,15 +67,25 @@ void perm_n_r(vector<int> n, vector<int> tmp, int r, set<int> &ans) {
 
 int main(int argc, char* argv[]) {
 	
-	vector<int> n = { 0, 1, 1 }; // 입력 벡터
+	string str("");
+
+	vector<int> n; // 입력 벡터
 	vector<int> tmp; // 임시 벡터 
-	set<int> ans; // 정답이 들어있는 집합
+	int ans = 0; // 정답
+
+	// 문자열 입력
+	cin >> str;
+
+	// 문자열 -> 숫자 배열 변환
+	for (char ch : str)
+		n.push_back(ch - '0');
 
 	// n개 원소 중 순서를 고려하여 1개, 2개, ... n개를 선택하여 만들어지는 숫자 조합 && 소수 판별 && 숫자 세기
 	for(int r = 1; r <= n.size(); ++r)
 		perm_n_r(n, tmp, r, ans);
 
-	cout << ans.size() << '\n';
+	// 결과 출력
+	cout << ans << '\n';
 
 	return 0;
 }
