@@ -57,3 +57,44 @@ int main(){
 <br>
 
 ### nPr의 경우
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main(){
+
+    // 5P2 출력 하는 코드
+
+	vector<int> v = {1, 2, 3, 4, 5};
+
+    int n = v.size();  // 5
+    int r = 2  
+	
+	do
+	{
+	  for(int i = 0; i < r; i++)
+	  {
+		cout << v[i] << " ";
+	  }
+	  cout << '\n';
+
+   	  reverse(v.begin() + r, v.end());
+
+	}while(next_permutation(v.begin(), v.end()));   
+
+}
+```
+<br>
+
+1. 전체 배열은 그대로 순열대로 정렬 과정을 거친다.   
+2. for문을 통해 출력은 nPr에서 r만큼만 한다.
+--> 하지만 이런 경우
+```C++
+1234 -> 12
+1243 -> 12
+```
+<br>
+위와 같이 12가 두 번 출력된다.
