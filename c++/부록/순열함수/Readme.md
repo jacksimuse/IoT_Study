@@ -83,7 +83,7 @@ int main(){
 	  }
 	  cout << '\n';
 
-   	  reverse(v.begin() + r, v.end());
+   	  //reverse(v.begin() + r, v.end());
 
 	}while(next_permutation(v.begin(), v.end()));   
 
@@ -95,3 +95,10 @@ int main(){
 1243 -> 12
 ```   
 위와 같이 12가 두 번 출력된다.
+그러므로 reverse()를 사용하여 r바로 다음 숫자와 끝을 교환한다.
+```C++
+1234 -> 12 출력후
+// 1234 -> 1243으로 정렬
+// 1243 바로 다음 순열은 1324이므로
+1324 -> 13을 출력하게 된다.
+```
