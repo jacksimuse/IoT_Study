@@ -68,11 +68,11 @@ using namespace std;
 
 int main(){
 
-    // 5P2 출력 하는 코드
+    // 4P2 출력 하는 코드
 
-	vector<int> v = {1, 2, 3, 4, 5};
+	vector<int> v = {1, 2, 3, 4};
 
-    int n = v.size();  // 5
+    int n = v.size();  // 4
     int r = 2  
 	
 	do
