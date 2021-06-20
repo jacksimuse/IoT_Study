@@ -102,3 +102,6 @@ int main(){
 // 1243 바로 다음 순열은 1324이므로
 1324 -> 13을 출력하게 된다.
 ```
+<br>
+
+- 출처 : (https://ansohxxn.github.io/algorithm/permutation/#stl-%ED%95%A8%EC%88%98%EB%A1%9C-%EC%88%9C%EC%97%B4-%EA%B5%AC%ED%95%98%EA%B8%B0) <br>
