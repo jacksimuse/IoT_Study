@@ -26,3 +26,4 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 
 부록
 - [벡터](https://github.com/jacksimuse/IoT_Study/tree/main/c%2B%2B/%EB%B6%80%EB%A1%9D/%EB%B2%A1%ED%84%B0%EC%A0%95%EB%A6%AC)
+- [순열](https://github.com/jacksimuse/IoT_Study/tree/main/c%2B%2B/%EB%B6%80%EB%A1%9D/%EC%88%9C%EC%97%B4%ED%95%A8%EC%88%98)
