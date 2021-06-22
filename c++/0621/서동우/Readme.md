@@ -75,4 +75,13 @@ int main()
 }
 ```
 
+<br>
+
+모든 경로를 구한다음에 디버그해서 관찰하면 다음 이미지와 같다.
+![모든 경로 구했을때 배열](https://github.com/jacksimuse/IoT_Study/blob/main/c%2B%2B/0621/%EC%84%9C%EB%8F%99%EC%9A%B0/%EB%AA%A8%EB%93%A0%20%EA%B2%BD%EB%A1%9C%EB%A5%BC%20%EA%B5%AC%ED%96%88%EC%9D%84%EB%95%8C%20%EB%B0%B0%EC%97%B4.png)
+
+<br>
+이때 1번 마을에서 다른 마을로가는 경로만 검사하면되므로  <br>
+graph[1]의 배열중에 K 이하의 배열요소만 검사하도록 조건문으로 걸어서 answer를 ++해주면됨 <br>
+
 문제 누가냈누..?
