@@ -31,10 +31,10 @@ int solution(string skill, vector<string> skill_trees) {
                 break;
             }
         }
-        if (flag == 0) // flag = 0 이면 틀린거라서 틀린 스킬셋이므로 답에서 하나씩 차감, flag는 원래대로 돌려주고 그릇도 리셋해준다
+        if (flag == 0) // flag = 0 이면 틀린거라서 틀린 스킬셋이므로 답에서 하나씩 차감 
         {
             answer--;
-            flag = 1;
+            flag = 1;   // flag는 원래대로 돌려주고 그릇도 리셋해준다
         }
         get_skill.erase(get_skill.begin(), get_skill.end());
     }
