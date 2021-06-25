@@ -1,3 +1,4 @@
+### 점프와 순간이동
 ```C++
 #include <iostream>
 using namespace std;
@@ -25,6 +26,68 @@ int main()
     }
 
     cout << ans;
+
+    return 0;
+}
+```
+<br>
+
+### 영어 끝말잇기
+```C++
+#include <string>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n = 4;
+    vector<string> words = { "a", "aba", "aba", "a" };
+    string t;
+    int idx = 0;
+    int flag = 0;
+    vector<int> answer = { 0, 0 };
+
+    for (int i = 1; i < words.size(); i++)
+    {
+        t = words[i];
+        for (int j = 0; j < i; j++)
+        {
+            if (t == words[j])
+            {
+                idx = i + 1;
+                flag = 1;
+                break;
+            }
+        }
+
+        if (flag == 1) break;
+
+        if ((flag == 1) || (words[i].front() != words[i - 1].back()))
+        {
+            idx = i + 1;
+            flag = 1;
+            break;
+        }
+    }
+
+    if (flag == 1)
+    {
+        if ((idx % n == 0) && (idx != 0))
+        {
+            answer[0] = n;
+            answer[1] = idx / n;
+        }
+        else
+        {
+            answer[0] = idx % n;
+            answer[1] = ((idx - (idx % n)) / n) + 1;
+        }
+    }
+    
+    cout << answer[0] << " " << answer[1];
+
 
     return 0;
 }
