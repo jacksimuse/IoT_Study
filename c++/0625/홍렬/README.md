@@ -43,7 +43,7 @@ using namespace std;
 int main()
 {
     int n = 4;
-    vector<string> words = { "a", "aba", "aba", "a" };
+    vector<string> words = { "a", "aba", "aba", "a" };	// 끝말잇기 벡터<스트링>
     string t;
     int idx = 0;
     int flag = 0;
