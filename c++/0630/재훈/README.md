@@ -19,3 +19,21 @@ int solution(int n) {
     return answer = res;
 }
 ```
+# 손익분기점
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, c, produce_price, BEP;    // 고정비용 a 가변비용 b 판매가격 c 
+	cin >> a >> b >> c;
+
+
+	BEP = c - b;    // n 개 값을 곱해서 계산하나 미리 계산하고 곱하나 같으므로 미리 빼줌 (a x n - b x n) = (a - b) x n
+	produce_price = a + BEP;    // 뺀값을 고정비용에 더해준다
+
+	if (BEP <= 0) produce_price = -1;   // 더한값을 다시 BEP로 나눠준다 == 곱해주는 개수와 같은원리 / 뺀값이 0이하면 손익을 넘길수 없으므로 -1처리
+	else produce_price = produce_price / BEP;
+
+	cout << produce_price;
+}
