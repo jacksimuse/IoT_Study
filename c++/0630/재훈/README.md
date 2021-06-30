@@ -20,6 +20,7 @@ int solution(int n) {
 }
 ```
 # 손익분기점
+```c++
 #include <iostream>
 using namespace std;
 
@@ -37,3 +38,4 @@ int main()
 
 	cout << produce_price;
 }
+```
