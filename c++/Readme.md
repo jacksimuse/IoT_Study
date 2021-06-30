@@ -33,6 +33,9 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 
 5주차
 - 0628 프로그래머스 스택/큐 [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583)
+- 0630 <br>
+  프로그래머스 Lv2 연습문제 : [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945?language=cpp) <br>
+  백준 1712번 문제 : [손익분기점](https://www.acmicpc.net/problem/1712) <br>
 
 부록
 - [벡터](https://github.com/jacksimuse/IoT_Study/tree/main/c%2B%2B/%EB%B6%80%EB%A1%9D/%EB%B2%A1%ED%84%B0%EC%A0%95%EB%A6%AC)
