@@ -27,9 +27,8 @@ int main()
 	return 0;
 }
 ```
-<br>
 
-### 피보나치 
+### 피보나치 수열
 ```C++
 #include <string>
 #include <vector>
