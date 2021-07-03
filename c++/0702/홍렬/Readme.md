@@ -8,12 +8,12 @@ using namespace std;
 
 int main()
 {
-	int nx, ny;			// 입력받을 x, y 좌표
+	int nx, ny;		// 입력받을 x, y 좌표
 	vector<int> x;		// nx를 담을 벡터
 	vector<int> y;		// ny를 담을 벡터
 	int flx = 0;		// x좌표에 대한 플래그
 	int fly = 0;		// y좌표에 대한 플래그
-	int rx, ry;			// 주어진 사각형의 네번째 점의 좌표
+	int rx, ry;		// 주어진 사각형의 네번째 점의 좌표
 
 
 	// 1. 직사각형의 세 점의 좌표를 입력 받는다.
@@ -43,7 +43,7 @@ int main()
 	// 만약 첫번째 x가 1개밖에 없다면
 	if (flx == 1) 
 	{ 
-		rx = x[0];					// 위의 규칙대로 네번째 점의 x는 첫번째 x가 되고,
+		rx = x[0];			// 위의 규칙대로 네번째 점의 x는 첫번째 x가 되고,
 	}
 	// 첫번째 x가 2개라면
 	else if (flx == 2)
@@ -52,7 +52,7 @@ int main()
 		{
 			if (x[0] != x[i])
 			{
-				rx = x[i];			// 네번째 점의 x로 정한다.
+				rx = x[i];	// 네번째 점의 x로 정한다.
 			}
 		}
 	}
@@ -97,7 +97,7 @@ using namespace std;
 
 int main()
 {
-	int T;					// 테스트 케이스 수
+	int T;				// 테스트 케이스 수
 	vector<int> vx1;		// 좌표1의 x좌표
 	vector<int> vy1;		// 좌표1의 y좌표
 	vector<int> vr1;		// 좌표1의 타겟과 거리
@@ -105,12 +105,12 @@ int main()
 	vector<int> vy2;		// 좌표2의 y좌표
 	vector<int> vr2;		// 좌표2의 타켓과 거리
 
-	int x1;					// 사용자 입력 받을 변수들
+	int x1;				// 사용자 입력 받을 변수들
 	int y1;
 	int r1;
 	int x2;
 	int y2;
-	int r2;					// 요기까지
+	int r2;				// 요기까지
 
 	int idx = 0;			// 반복문에 사용될 벡터 인덱스
 	vector<int> vcnt;		// 최종 반환할 타겟 좌표 수
