@@ -3,6 +3,12 @@
   백준 3009번 문제 : 네번째 점
   다른 3좌표가 주어졌을때 좌표끼리 직사각형이되는 다른 1좌표를 구하는 문제
 */
+
+/*
+  구현 : 사각형 중에 모자란 한 점을 찾는 것이므로 세 점에서 짝이 없는 수를 찾기
+     1. XOR 연산 이용(비트가 서로 다르면 1, 같으면 0 반환)
+     2. 해당 문제에서 겹치는 부분이 2번 나오기때문에 2번 XOR 연산이되면 상쇄됨.
+*/
 #include <iostream>
 using namespace std;
 
@@ -15,7 +21,7 @@ int main()
 	while (t)
 	{
 		cin >> x >> y;
-		tempX = tempX ^ x;
+		tempX = tempX ^ x;  // XOR 연산
 		tempY = tempY ^ y;
 		t--;
 	}
