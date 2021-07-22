@@ -43,6 +43,9 @@ Cpp을 배우는 기념으로 코딩테스트대비 알고리즘을 Study하는 
 - 0714 프로그래머스 Lv2 연습문제 : [124 나라의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12899)
 - 0716 프로그래머스 Lv2 연습문제 : [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
 
+7주차
+- 0721 면접 스터디
+
 부록
 - [벡터](https://github.com/jacksimuse/IoT_Study/tree/main/c%2B%2B/%EB%B6%80%EB%A1%9D/%EB%B2%A1%ED%84%B0%EC%A0%95%EB%A6%AC)
 - [순열](https://github.com/jacksimuse/IoT_Study/tree/main/c%2B%2B/%EB%B6%80%EB%A1%9D/%EC%88%9C%EC%97%B4%ED%95%A8%EC%88%98)
